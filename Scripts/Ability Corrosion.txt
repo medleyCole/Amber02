@@ -1,0 +1,4 @@
+# Go to PokeBattle_BattlerEffects and find "def pbCanPoison?". Look at "if (pbHasType?(:POISON) || pbHasType?(:STEEL)).
+# After !hasWorkingItem(:RINGTARGET), paste the following:
+
+&& !attacker.hasWorkingAbility(:CORROSION)

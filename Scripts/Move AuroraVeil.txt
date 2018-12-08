@@ -1,0 +1,140 @@
+# Paste this somewhere in PokeBattle_MoveEffects:
+
+################################################################################
+# For 5 rounds, lowers power of physical and special attacks against the user's
+# Side. (Aurora Veil)
+################################################################################
+class PokeBattle_Move_CF6 < PokeBattle_Move
+  def pbEffect(attacker,opponent,hitnum=0,alltargets=nil,showanimation=true)
+    if attacker.pbOwnSide.effects[PBEffects::AuroraVeil]>0
+      @battle.pbDisplay(_INTL("But it failed!"))
+      return -1
+    end
+    if @battle.pbWeather!=PBWeather::HAIL
+      @battle.pbDisplay(_INTL("But it failed!"))
+      return -1
+    end
+    pbShowAnimation(@id,attacker,opponent,hitnum,alltargets,showanimation)
+    attacker.pbOwnSide.effects[PBEffects::AuroraVeil]=5
+    attacker.pbOwnSide.effects[PBEffects::AuroraVeil]=8 if attacker.hasWorkingItem(:LIGHTCLAY)
+    if !@battle.pbIsOpposing?(attacker.index)
+      @battle.pbDisplay(_INTL("Aurora Veil is protecting your side!"))
+    else
+      @battle.pbDisplay(_INTL("Aurora Veil is protecting the opposing team's side!"))
+    end  
+    return 0
+  end
+end
+
+# Paste this under PBEffects, UNDER "These effects apply to a side":
+
+    AuroraVeil         = 21
+
+
+# In PokeBattle_ActiveSideField, paste this underneath the first "def initialize", under Reflect:
+
+      @effects[PBEffects::AuroraVeil]         = 0
+
+
+# In PokeBattle_Move, paste this underneath Lightscreen:
+
+      # Aurora Veil
+      if opponent.pbOwnSide.effects[PBEffects::AuroraVeil]>0 && pbIsPhysical?(type)
+        if @battle.doublebattle
+          finaldamagemult=(finaldamagemult*0.66).round
+        else
+          finaldamagemult=(finaldamagemult*0.5).round
+        end
+      end
+      if opponent.pbOwnSide.effects[PBEffects::AuroraVeil]>0 && pbIsSpecial?(type)
+        if @battle.doublebattle
+          finaldamagemult=(finaldamagemult*0.66).round
+        else
+          finaldamagemult=(finaldamagemult*0.5).round
+        end
+      end
+
+
+
+# In PokeBattle_Battle, paste this underneath Lightscreen:
+
+    # Aurora Veil
+    for i in 0...2
+      if sides[i].effects[PBEffects::AuroraVeil]>0
+        sides[i].effects[PBEffects::AuroraVeil]-=1
+        if sides[i].effects[PBEffects::AuroraVeil]=0
+          pbDisplay(_INTL("Your team's Aurora Veil faded!")) if i==0
+          pbDisplay(_INTL("The opposing team's Aurora Veil faded!")) if i==1
+          PBDebug.log("[End of effect] Aurora Veil ended on the player's side") if i==0
+          PBDebug.log("[End of effect] Aurora Veil ended on the opponent's side") if i==1
+        end
+      end
+    end
+
+
+
+# OPTIONAL: In PokeBattle_AI, paste this underneath "score+=20 if attacker.pbOpposingSide.effects[PBEffects::Reflect]>0":
+
+      score+=20 if attacker.pbOpposingSide.effects[PBEffects::AuroraVeil]>0
+
+
+# Then, paste this underneath BOTH "opponent.pbOwnSide.effects[PBEffects::LightScreen]>0 ||"s and make sure you put another || after it UNLESS it is the last effect in the list.
+
+         opponent.pbOwnSide.effects[PBEffects::AuroraVeil]>0 ||
+
+
+# Next, find "attacker.pbOwnSide.effects[PBEffects::LightScreen]>0 ||" and paste this underneath (If it's the last item in the list you don't need ||'s):
+
+                     attacker.pbOwnSide.effects[PBEffects::AuroraVeil]>0 ||
+
+
+
+# Find the following lines:
+
+    # Reflect
+    if skill>=PBTrainerAI.highSkill
+      if opponent.pbOwnSide.effects[PBEffects::Reflect]>0 && move.pbIsPhysical?(type)
+        if !opponent.pbPartner.isFainted?
+          damage=(damage*0.66).round
+        else
+          damage=(damage*0.5).round
+        end
+      end
+    end
+
+
+# And paste this right underneath the last end, before the hashtag:
+
+    # Aurora Veil
+    if skill>=PBTrainerAI.highSkill
+      if opponent.pbOwnSide.effects[PBEffects::AuroraVeil]>0 && move.pbIsPhysical?(type)
+        if !opponent.pbPartner.isFainted?
+          damage=(damage*0.66).round
+        else
+          damage=(damage*0.5).round
+        end
+      end
+    end
+    # Aurora Veil
+    if skill>=PBTrainerAI.highSkill
+      if opponent.pbOwnSide.effects[PBEffects::AuroraVeil]>0 && move.pbIsSpecial?(type)
+        if !opponent.pbPartner.isFainted?
+          damage=(damage*0.66).round
+        else
+          damage=(damage*0.5).round
+        end
+      end
+    end
+
+
+
+# Find the following lines:
+
+    when 0xA3
+      score-=90 if attacker.pbOwnSide.effects[PBEffects::LightScreen]>0
+
+
+# And paste this underneath:
+
+    when 0xCF6
+      score-=90 if attacker.pbOwnSide.effects[PBEffects::AuroraVeil]>0

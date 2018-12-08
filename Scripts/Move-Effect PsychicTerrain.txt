@@ -1,0 +1,67 @@
+# Paste this somewhere in PokeBattle_MoveEffects:
+
+################################################################################
+# For 5 rounds, creates a psychic terrain which boosts Psychic-type moves and
+# protects Pokémon from priority moves. Affects non-airborne Pokémon only.
+# (Psychic Terrain)
+################################################################################
+class PokeBattle_Move_159 < PokeBattle_Move
+  def pbEffect(attacker,opponent,hitnum=0,alltargets=nil,showanimation=true)
+    if @battle.field.effects[PBEffects::PsychicTerrain]>0
+      @battle.pbDisplay(_INTL("But it failed!"))
+      return -1
+    end
+    pbShowAnimation(@id,attacker,nil,hitnum,alltargets,showanimation)
+    @battle.field.effects[PBEffects::ElectricTerrain]=0
+    @battle.field.effects[PBEffects::MistyTerrain]=0
+    @battle.field.effects[PBEffects::GrassyTerrain]=0
+    if attacker.hasWorkingItem(:TERRAINEXTENDER)
+      @battle.field.effects[PBEffects::PsychicTerrain]=8
+    else
+      @battle.field.effects[PBEffects::PsychicTerrain]=5
+    end
+    @battle.pbDisplay(_INTL("The battlefield got weird!"))
+    if attacker.hasWorkingItem(:PSYCHICSEED)
+      if attacker.pbIncreaseStatWithCause(PBStats::SPDEF,1,attacker,PBItems.getName(attacker.item))
+        attacker.pbConsumeItem
+      end
+    end
+    return 0
+  end
+end
+
+
+# In PBEffects, paste this under "These effects apply to the battle (i.e. Both sides)":
+
+    PsychicTerrain  = 13
+
+# In PokeBattle_ActiveSideField, paste this under "def initialize", IN THE LIST THAT INCLUDES OTHER TERRAIN MOVES!
+
+      @effects[PBEffects::PsychicTerrain]  = 0
+
+
+# In PokeBattle_Battler, under "target.pbOwnSide.effects[PBEffects::QuickGuard]" after the "end", paste this:
+
+    if @battle.field.effects[PBEffects::PsychicTerrain]>0 && p>0 && !target.isAirborne?
+      @battle.pbDisplay(_INTL("The Psychic Terrain protected {1}!",target.pbThis))
+      PBDebug.log("[Move failed] Psychic Terrain stopped the attack")
+      return false
+    end
+
+
+# In PokeBattle_Move, LOOK for the following lines:
+
+    if @battle.field.effects[PBEffects::MistyTerrain]>0 &&
+       !opponent.isAirborne?(attacker.hasMoldBreaker) && isConst?(type,PBTypes,:DRAGON)
+      damagemult=(damagemult*0.5).round
+    end
+
+# And paste this underneath:
+
+    if @battle.field.effects[PBEffects::PsychicTerrain]>0 && !attacker.isAirborne? && isConst?(type,PBTypes,:PSYCHIC)
+      damagemult=(damagemult*1.5).round
+    end
+
+
+
+# That should be it. Please report if I missed something, as this is quite a large piece of code.

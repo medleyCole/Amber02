@@ -1,0 +1,35 @@
+# Paste this somewhere in PokeBattle_MoveEffects:
+
+################################################################################
+# Heals the target's Status condition and heals the user by 50%. (Purify) 
+################################################################################     
+class PokeBattle_Move_CF3 < PokeBattle_Move
+  def pbEffect(attacker,opponent,hitnum=0,alltargets=nil,showanimation=false)
+    if opponent.status!=PBStatuses::BURN &&
+       opponent.status!=PBStatuses::POISON &&
+       opponent.status!=PBStatuses::PARALYSIS &&
+       opponent.status!=PBStatuses::SLEEP &&
+       opponent.status!=PBStatuses::FROZEN
+      @battle.pbDisplay(_INTL("But it failed!"))
+      return -1
+    else
+      t=opponent.status
+      opponent.pbCureStatus(false)
+      if t==PBStatuses::BURN
+        @battle.pbDisplay(_INTL("{1}'s Purify cured {2}'s burn!",attacker.pbThis,opponent.pbThis))  
+      elsif t==PBStatuses::POISON
+        @battle.pbDisplay(_INTL("{1}'s Purify cured {2}'s poison!",attacker.pbThis,opponent.pbThis))  
+      elsif t==PBStatuses::PARALYSIS
+        @battle.pbDisplay(_INTL("{1}'s Purify cured {2}'s paralysis",attacker.pbThis,opponent.pbThis))
+      elsif t==PBStatuses::SLEEP
+        @battle.pbDisplay(_INTL("{1}'s Purify woke {2} up!",attacker.pbThis,opponent.pbThis))
+      elsif t==PBStatuses::FROZEN
+        @battle.pbDisplay(_INTL("{1}'s Purify thawed {2} out!",attacker.pbThis,opponent.pbThis))
+      end
+      pbShowAnimation(@id,attacker,nil,hitnum,alltargets,showanimation)
+      attacker.pbRecoverHP(((attacker.totalhp+1)/2).floor,true)
+      @battle.pbDisplay(_INTL("{1}'s HP was restored.",attacker.pbThis))
+      return 0
+    end
+  end
+end

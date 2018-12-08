@@ -1,0 +1,6 @@
+# Find Full Heal in PokeBattle_Battle and paste this underneath it:
+
+    elsif isContst?(item,PBItems,:BIGMALASADA)
+      battler.status=0; battler.statusCount=0
+      battler.effects[PBEffects::Confusion]=0
+      pbDisplay(_INTL("{1} became healthy!",battler.pbThis))

@@ -1,0 +1,7 @@
+# In PokeBattle_Battler, underneath "def pbEffectsOnDealingDamage", UNDERNEATH "IF DAMAGE>0" << !!, paste the following:
+
+        if target.hasWorkingAbility(:WATERCOMPACTION) && isConst?(movetype,PBTypes,:WATER)
+          if target.pbIncreaseStatWithCause(PBStats::DEFENSE,2,target,PBAbilities.getName(target.ability))
+            PBDebug.log("[Ability triggered] #{target.pbThis}'s Water Compaction")
+          end
+        end

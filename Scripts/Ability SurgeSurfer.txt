@@ -1,0 +1,5 @@
+# In PokeBattle_Battler, find "def pbSpeed()" and paste this somewhere underneath it:
+
+    if self.hasWorkingAbility(:SURGESURFER) && @battle.effects[PBEffects::ElectricTerrain]>0
+      speedmult=speedmult*2
+    end

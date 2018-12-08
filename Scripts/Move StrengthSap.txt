@@ -1,0 +1,27 @@
+# Paste this somewhere in PokeBattle_MoveEffects:
+
+################################################################################
+# Heals the user for an amount equal to the target's effective Attack stat
+# Lowers the target's Attack by 1 stage. (Strength Sap)
+################################################################################
+class PokeBattle_Move_CF13 < PokeBattle_Move
+  def pbEffect(attacker,opponent,hitnum=0,alltargets=nil,showanimation=true)
+    if attacker.effects[PBEffects::HealBlock]>0
+      bob="heal"
+      bob=_INTL("use {1}",name) if !opponent.pbCanReduceStatStage?(PBStats::ATTACK,true,false,attacker)
+      @battle.pbDisplay(_INTL("{1} can't {2} because of Heal Block!",attacker.pbThis,bob))
+      return -1
+    elsif attacker.hp==attacker.totalhp
+      @battle.pbDisplay(_INTL("{1}'s HP is full!",attacker.pbThis))
+      return -1
+    else
+      oatk=opponent.attack
+      attacker.pbRecoverHP(oatk,true)
+      @battle.pbDisplay(_INTL("{1}'s HP was restored.",attacker.pbThis))
+      if opponent.pbCanReduceStatStage?(PBStats::ATTACK,opponent,false,self)
+        opponent.pbReduceStat(PBStats::ATTACK,1,opponent,false,self)
+      end
+    end
+    return 0
+  end
+end

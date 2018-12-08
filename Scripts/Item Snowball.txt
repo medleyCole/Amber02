@@ -1,0 +1,7 @@
+# Find Cell Battery in PokeBattle_Battler and paste this underneath it:
+
+        elsif target.hasWorkingItem(:SNOWBALL) && isConst?(movetype,PBTypes,:ICE)
+          if target.pbIncreaseStatWithCause(PBStats::ATTACK,1,target,PBItems.getName(target.item))
+            PBDebug.log("[Item triggered] #{target.pbThis}'s #{PBItems.getName(target.item)}")
+            target.pbConsumeItem
+          end

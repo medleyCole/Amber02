@@ -1,0 +1,35 @@
+# Paste this somewhere in PokeBattle_MoveEffects:
+
+################################################################################
+# Charges the first turn and attacks the second turn. Will instantly attack in
+# Harsh Sunlight. (Solar Blade)
+################################################################################
+class PokeBattle_Move_CF7 < PokeBattle_Move
+  def pbTwoTurnAttack(attacker)
+    @immediate=false
+    if attacker.effects[PBEffects::TwoTurnAttack]==0
+      if @battle.pbWeather==PBWeather::SUNNYDAY ||
+         @battle.pbWeather==PBWeather::HARSHSUN
+        @immediate=true
+      end
+    end
+    if !@immediate && attacker.hasWorkingItem(:POWERHERB)
+      @immediate=true
+    end
+    return false if @immediate
+    return attacker.effects[PBEffects::TwoTurnAttack]==0
+  end
+  
+  def pbEffect(attacker,opponent,hitnum=0,alltargets=nil,showanimation=false)
+    if @immediate || attacker.effects[PBEffects::TwoTurnAttack]>0
+      @battle.pbDisplay(_INTL("{1} is gathering light!",attacker.pbThis))
+    end
+    if @immediate
+      @battle.pbCommonAnimation("UseItem",attacker,nil)
+      @battle.pbDisplay(_INTL("{1} used Solar Blade!",attacker.pbThis))
+      attacker.pbConsumeItem
+    end
+    return 0 if attacker.effects[PBEffects::TwoTurnAttack]>0
+    return super(attacker,opponent,hitnum,alltargets,showanimation)
+  end
+end

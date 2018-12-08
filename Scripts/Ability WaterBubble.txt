@@ -1,0 +1,15 @@
+# In PokeBattle_Battler, underneath pbEffectsAfterHit, add the following:
+
+    if user.hasWorkingAbility(:WATERBUBBLE) && user.status==PBStatuses::BURN
+      PBDebug.log("[Ability triggered] #{pbThis}'s #{PBAbilities.getName(@ability)}")
+      pbCureStatus(false)
+      @battle.pbDisplay(_INTL("{1}'s {2} prevents burns!",pbThis,PBAbilities.getName(user.ability))) if showMessages
+    end
+
+
+
+# Then in PokeBattle_Move, underneath "def pbCalcDamage", add the following:
+
+      if opponent.hasWorkingAbility(:WATERBUBBLE) && isConst?(type,PBTypes,:FIRE)
+        damagemult=(damagemult*0.5).round
+      end

@@ -1,0 +1,6 @@
+# In PokeBattle_Battler, find "def pbSuccesCheck" and paste the following underneath:
+
+    if target.hasWorkingAbility(:DAZZLING) && thismove.priority>0
+      @battle.pbDisplay(_INTL("{1}'s Dazzling prevents the use of moves with increased priority!",target.pbThis))
+      return false
+    end

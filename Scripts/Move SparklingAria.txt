@@ -1,0 +1,14 @@
+# Paste this somewhere in PokeBattle_MoveEffects:
+
+################################################################################
+# Inflicts damage to the target. If the target is burned, the burn is healed.
+# (Sparkling Aria)
+################################################################################
+class PokeBattle_Move_CF8 < PokeBattle_Move
+  def pbEffectAfterHit(attacker,opponent,turneffects)
+    if !opponent.isFainted? && opponent.damagestate.calcdamage>0 &&
+      !opponent.damagestate.substitute && opponent.status==PBStatuses::BURN
+      opponent.pbCureStatus
+    end
+  end
+end

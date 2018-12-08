@@ -1,0 +1,17 @@
+# In PokeBattle_Move, under "def pbModifyType" you will find a list of Normalize, Aerilate, Refrigerate and Pixilate.
+# In that list, paste the following:
+
+        elsif attacker.hasWorkingAbility(:GALVANIZE) && hasConst?(PBTypes,:ELECTRIC)
+          type=getConst(PBTypes,:ELECTRIC)
+          @powerboost=true
+
+
+
+# Further down in PokeBattle_Move, find a list of Aerilate, Refrigerate and Pixilate. Remove it completely and paste the following:
+
+    if (attacker.hasWorkingAbility(:AERILATE) ||
+       attacker.hasWorkingAbility(:REFRIGERATE) ||
+       attacker.hasWorkingAbility(:PIXILATE) ||
+       attacker.hasWorkingAbility(:GALVANIZE)) && @powerboost
+      damagemult=(damagemult*1.2).round
+    end

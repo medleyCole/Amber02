@@ -1,0 +1,24 @@
+# Paste this somewhere in PokeBattle_MoveEffects:
+
+################################################################################
+# Lowers the target's Attack and Special Attack. Bypasses Accuracy. (Tearful Look)
+################################################################################
+class PokeBattle_Move_CF14 < PokeBattle_Move
+  def pbAccuracyCheck(attacker,opponent)
+    return true
+  end
+
+  def pbEffect(attacker,opponent,hitnum=0,alltargets=nil,showanimation=true)
+    ret=super(attacker,opponent,hitnum,alltargets,showanimation)
+      showanim=true
+      if opponent.pbCanReduceStatStage?(PBStats::ATTACK,opponent,false,self)
+        opponent.pbReduceStat(PBStats::ATTACK,1,opponent,false,self,showanim)
+        showanim=false
+      end
+      if opponent.pbCanReduceStatStage?(PBStats::SPATK,opponent,false,self)
+        opponent.pbReduceStat(PBStats::SPATK,1,opponent,false,self,showanim)
+        showanim=false
+      end
+    return ret
+  end
+end

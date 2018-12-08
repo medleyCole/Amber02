@@ -1,0 +1,45 @@
+# Paste this somewhere in PokeBattle_MoveEffects:
+
+################################################################################
+# Copies the opponent's stat changes and then resets it. After this, it will
+# Attack. (Spectral Thief)
+################################################################################
+class PokeBattle_Move_CF9 < PokeBattle_Move
+  def pbEffect(attacker,opponent,hitnum=0,alltargets=nil,showanimation=true)
+    if opponent.pbOwnSide.effects[PBEffects::CraftyShield]
+      @battle.pbDisplay(_INTL("But it failed!"))
+      return -1
+    end
+    @battle.pbDisplay(_INTL("{1} stole {2}'s stat changes!",attacker.pbThis,opponent.pbThis(true)))
+    if opponent.stages[PBStats::ATTACK]>0
+      attacker.pbIncreaseStat(PBStats::ATTACK,opponent.stages[PBStats::ATTACK],attacker,false,self) if attacker.pbCanIncreaseStatStage?(PBStats::ATTACK,attacker,false,self)
+      opponent.stages[PBStats::ATTACK]=0
+    end
+    if opponent.stages[PBStats::DEFENSE]>0
+      attacker.pbIncreaseStat(PBStats::DEFENSE,opponent.stages[PBStats::DEFENSE],attacker,false,self) if attacker.pbCanIncreaseStatStage?(PBStats::DEFENSE,attacker,false,self)
+      opponent.stages[PBStats::DEFENSE]=0
+    end
+    if opponent.stages[PBStats::SPATK]>0
+      attacker.pbIncreaseStat(PBStats::SPATK,opponent.stages[PBStats::SPATK],attacker,false,self) if attacker.pbCanIncreaseStatStage?(PBStats::SPATK,attacker,false,self)
+      opponent.stages[PBStats::SPATK]=0
+    end
+    if opponent.stages[PBStats::SPDEF]>0
+      attacker.pbIncreaseStat(PBStats::SPDEF,opponent.stages[PBStats::SPDEF],attacker,false,self) if attacker.pbCanIncreaseStatStage?(PBStats::SPDEF,attacker,false,self)
+      opponent.stages[PBStats::SPDEF]=0
+    end
+    if opponent.stages[PBStats::SPEED]>0
+      attacker.pbIncreaseStat(PBStats::SPEED,opponent.stages[PBStats::SPEED],attacker,false,self) if attacker.pbCanIncreaseStatStage?(PBStats::SPEED,attacker,false,self)
+      opponent.stages[PBStats::SPEED]=0
+    end
+    if opponent.stages[PBStats::ACCURACY]>0
+      attacker.pbIncreaseStat(PBStats::ACCURACY,opponent.stages[PBStats::ACCURACY],attacker,false,self) if attacker.pbCanIncreaseStatStage?(PBStats::ACCURACY,attacker,false,self)
+      opponent.stages[PBStats::ACCURACY]=0
+    end
+    if opponent.stages[PBStats::EVASION]>0
+      attacker.pbIncreaseStat(PBStats::EVASION,opponent.stages[PBStats::EVASION],attacker,false,self) if attacker.pbCanIncreaseStatStage?(PBStats::EVASION,attacker,false,self)
+      opponent.stages[PBStats::EVASION]=0
+    end
+    ret=super(attacker,opponent,hitnum,alltargets,showanimation)
+    return ret
+  end  
+end

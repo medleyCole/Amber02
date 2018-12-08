@@ -1,0 +1,46 @@
+# Paste these at the bottom the Pokemon_MultipleForms script.
+
+MultipleForms.register(:ROCKRUFF,{
+"getForm"=>proc{|pokemon|
+   if PBDayNight.isDay?
+     next 0
+   else
+     next 1
+   end
+}
+})
+
+MultipleForms.register(:LYCANROC,{ # Lycanroc Day and Night.
+"getBaseStats"=>proc{|pokemon|
+   next if pokemon.form==0
+   next [85,115,75,82,55,75]
+},
+"getAbilityList"=>proc{|pokemon|
+   next [[getID(PBAbilities,:KEENEYE),0],
+         [getID(PBAbilities,:VITALSPIRIT),1],
+         [getID(PBAbilities,:NOGUARD),2]]
+},
+"height"=>proc{|pokemon|
+   next if pokemon.form==0
+   next 1.1
+},
+"getMoveList"=>proc{|pokemon|
+   next if pokemon.form==0
+   movelist=[]
+   case pokemon.form
+   when 1; movelist=[[1,:COUNTER],[1,:REVERSAL],[1,:TAUNT],[1,:TACKLE],[1,:LEER],
+                     [4,:SANDATTACK],[7,:BITE],[12,:HOWL],[15,:ROCKTHROW],
+                     [18,:ODORSLEUTH],[23,:ROCKTOMB],[26,:ROAR],[29,:STEALTHROCK],
+                     [34,:ROCKSLIDE],[37,:SCARYFACE],[40,:CRUNCH],[45,:ROCKCLIMB],
+                     [48,:STONEEDGE]]
+   end
+   for i in movelist
+     i[1]=getConst(PBMoves,i[1])
+   end
+   next movelist
+},
+"dexEntry"=>proc{|pokemon|
+   next if pokemon.form==0
+   next _INTL("The more intimidating the opponent it faces, the more this Pokémon's blood boils. It will disregard its own safety.")
+}
+})

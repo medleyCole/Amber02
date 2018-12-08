@@ -1,0 +1,7 @@
+# Under PokeBattle_Battler, find "QuickGuard" under pbSuccesCheck. Above it, paste this:
+
+    if target.hasWorkingAbility(:QUEENLYMAJESTY) && p>0
+      @battle.pbDisplay(_INTL("{1}'s Queenly Majesty made the move ineffective!",target.pbThis))
+      PBDebug.log("[Move failed] The target's Queenly Majesty stopped the attack")
+      return false
+    end

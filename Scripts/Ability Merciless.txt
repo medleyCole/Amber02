@@ -1,0 +1,3 @@
+# In PokeBattle_Move, find "def pbIsCritical?" and paste the following under it:
+
+    return true if attacker.hasWorkingAbility(:MERCILESS) && opponent.status==PBStatuses::POISON

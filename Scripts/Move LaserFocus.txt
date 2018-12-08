@@ -1,0 +1,32 @@
+# Paste this somewhere in PokeBattle_MoveEffects:
+
+################################################################################
+# The user's next move will be a critical hit
+################################################################################
+class PokeBattle_Move_CF18 < PokeBattle_Move
+  def pbEffect(attacker,opponent,hitnum=0,alltargets=nil,showanimation=true)
+    if attacker.effects[PBEffects::LaserFocus]>0
+      @battle.pbDisplay(_INTL("But it failed!"))
+      return -1
+    else
+    attacker.effects[PBEffects::LaserFocus]=1
+    @battle.pbDisplay(_INTL("{1} began focusing hard!",attacker.pbThis))
+    return 0
+    end
+  end
+end
+
+
+# Next, paste this line in PBEffects (Change the number to the lowest number that's not used)
+
+    LaserFocus         = 113
+
+
+# In PokeBattle_Battler, paste this line directly under "def pbEffectsOnMoveEnd":
+
+    user.effects[PBEffects::LaserFocus]-=1
+
+
+# In PokeBattle_Move, paste this uner "def isCritical?":
+
+    return true if attacker.effects[PBEffects::LaserFocus]>0

@@ -1,0 +1,19 @@
+# Paste this somewhere in PokeBattle_MoveEffects:
+
+################################################################################
+# Raises the Attack and Special Attack of an ally. (Gear Up)
+################################################################################
+class PokeBattle_Move_CF12 < PokeBattle_Move
+  def pbEffect(attacker,opponent,hitnum=0,alltargets=nil,showanimation=true)
+    if !@battle.doublebattle || !opponent ||
+       !opponent.pbCanIncreaseStatStage?(PBStats::ATTACK,attacker,false,self) ||
+       !opponent.pbCanIncreaseStatStage?(PBStats::SPATK,attacker,false,self)
+      @battle.pbDisplay(_INTL("But it failed!"))
+      return -1
+    end
+    pbShowAnimation(@id,attacker,opponent,hitnum,alltargets,showanimation)
+    opponent.pbIncreaseStat(PBStats::ATTACK,1,attacker,false,self)
+    opponent.pbIncreaseStat(PBStats::SPATK,1,attacker,false,self)
+    return 0
+  end
+end

@@ -1,0 +1,5 @@
+# Under PokeBattle_Move, find "def pbTypeModifier", and paste this underneath the otype1=..., otype2=... and otype3=...:
+
+    if attacker.hasWorkingAbility && isSoundBased?
+      atype=getConst(PBTypes,:WATER) || 0
+    end

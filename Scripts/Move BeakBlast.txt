@@ -1,0 +1,58 @@
+# In PokeBattle_MoveEffects, Paste this on a new line:
+
+################################################################################
+# Charges its beak and attacks second turn. (Beak Blast)
+################################################################################
+class PokeBattle_Move_CF20 < PokeBattle_Move
+  def pbTwoTurnAttack(attacker)
+    @immediate=false
+    if !@immediate && attacker.hasWorkingItem(:POWERHERB)
+      @immediate=true
+    end
+    return false if @immediate
+    return attacker.effects[PBEffects::TwoTurnAttack]==0
+  end
+
+  def pbEffect(attacker,opponent,hitnum=0,alltargets=nil,showanimation=true)
+    if @immediate || attacker.effects[PBEffects::TwoTurnAttack]>0
+      pbShowAnimation(@id,attacker,opponent,1,alltargets,showanimation) # Charging anim
+      @battle.pbDisplay(_INTL("{1} is heating up its beak!",attacker.pbThis))
+      attacker.effects[PBEffects::BeakBlast]=1
+    end
+    if @immediate
+      @battle.pbCommonAnimation("UseItem",attacker,nil)
+      @battle.pbDisplay(_INTL("{1} became fully charged due to its Power Herb!",attacker.pbThis))
+      attacker.pbConsumeItem
+      attacker.effects[PBEffects::BeakBlast]=0
+    end
+    return 0 if attacker.effects[PBEffects::TwoTurnAttack]>0
+    return super(attacker,opponent,hitnum,alltargets,showanimation)
+  end
+end
+
+
+
+
+# Next, in PBEffects, paste this (you should change the number to the lowest number used):
+
+    BeakBlast          = 112
+
+
+# In PokeBattle_Battler, paste this underneath "@effects[PBEffects::TwoTurnAttack]=0 # Cancel user of two-turn attacks":
+
+effects[PBEffects::BeakBlast]=0 # Stops Beak Blast burn effect if active
+
+
+# In PokeBattle_Battler, underneath @effects[PBEffects::Yawn]           = 0, paste this (pretty high up):
+
+    @effects[PBEffects::BeakBlast]        = 0
+
+
+
+# Next, under Moxie (Still in PokeBattle_Battler), paste this:
+
+
+# Beak Blast
+    if target.effects[PBEffects::BeakBlast]>0 && thismove.isContactMove?
+      user.status=PBStatuses::BURN
+    end

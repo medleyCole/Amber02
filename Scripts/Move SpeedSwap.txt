@@ -1,0 +1,13 @@
+# Paste this somewhere in PokeBattle_MoveEffects:
+
+################################################################################
+# User and target swap their Speed stats. (Speed Swap)
+################################################################################
+class PokeBattle_Move_CF10 < PokeBattle_Move
+  def pbEffect(attacker,opponent,hitnum=0,alltargets=nil,showanimation=true)
+    pbShowAnimation(@id,attacker,opponent,hitnum,alltargets,showanimation)
+    attacker.speed,opponent.speed=opponent.speed,attacker.speed
+    @battle.pbDisplay(_INTL("{1} and {2} switched their Speed stats!",attacker.pbThis,opponent.pbThis))
+    return 0
+  end
+end

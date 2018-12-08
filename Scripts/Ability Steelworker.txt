@@ -1,0 +1,5 @@
+# In PokeBattle_Move, locate "def pbCalcDamage" and paste this somewhere in the list underneath it:
+
+    if attacker.hasWorkingAbility(:STEELWORKER) && isCont?(PBTypes,:STEEL)
+      damagemult=(damagemult*1.5).round
+    end

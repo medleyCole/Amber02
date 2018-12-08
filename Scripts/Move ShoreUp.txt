@@ -1,0 +1,27 @@
+# Paste this somewhere in PokeBattle_MoveEffects:
+
+################################################################################
+# Heals user by an amount depending on the weather. (Shore Up)
+################################################################################
+class PokeBattle_Move_CF5 < PokeBattle_Move
+  def isHealingMove?
+    return true
+  end
+
+  def pbEffect(attacker,opponent,hitnum=0,alltargets=nil,showanimation=true)
+    if attacker.hp==attacker.totalhp
+      @battle.pbDisplay(_INTL("{1}'s HP is full!",attacker.pbThis))
+      return -1
+    end
+    hpgain=0
+    if @battle.pbWeather==PBWeather::SANDSTORM
+      hpgain=(attacker.totalhp*2/3).floor
+    else
+      hpgain=(attacker.totalhp/2).floor
+    end
+    pbShowAnimation(@id,attacker,nil,hitnum,alltargets,showanimation)
+    attacker.pbRecoverHP(hpgain,true)
+    @battle.pbDisplay(_INTL("{1}'s HP was restored.",attacker.pbThis))
+    return 0
+  end
+end

@@ -1,0 +1,3 @@
+# Under pbSuccessCheck, find "p=thismove.priority" and paste the following between Prankster and Gale Wings:
+
+      p+=3 if user.hasWorkingAbility(:TRIAGE) && thismove.isHealingMove?

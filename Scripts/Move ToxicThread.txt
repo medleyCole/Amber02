@@ -1,0 +1,16 @@
+# Paste this somewhere in PokeBattle_MoveEffects:
+
+################################################################################
+# Poisons the target and lowers its speed. (Toxic Thread)
+################################################################################
+class PokeBattle_Move_CF16 < PokeBattle_Move
+  def pbEffect(attacker,opponent,hitnum=0,alltargets=nil,showanimation=true)
+    if opponent.pbCanPoison?(attacker,false,self)
+      opponent.pbPoison(attacker)
+    end
+    if opponent.pbCanReduceStatStage?(PBStats::SPEED,opponent,false,self)
+      opponent.pbReduceStat(PBStats::SPEED,1,opponent,false,self,showanim)
+      showanim=true
+    end
+  end
+end

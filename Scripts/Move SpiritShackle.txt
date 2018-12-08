@@ -1,0 +1,20 @@
+# Paste this somewhere in PokeBattle_MoveEffects:
+
+################################################################################
+# Deals damage and makes the target unable to switch out. (Spirit Shackle)
+################################################################################
+class PokeBattle_Move_CF11 < PokeBattle_Move
+  def pbEffect(attacker,opponent,hitnum=0,alltargets=nil,showanimation=true)
+    if pbIsDamaging?
+      ret=super(attacker,opponent,hitnum,alltargets,showanimation)
+      if opponent.damagestate.calcdamage>0 && !opponent.damagestate.substitute &&
+         !opponent.isFainted?
+        if opponent.effects[PBEffects::MeanLook]<0
+          opponent.effects[PBEffects::MeanLook]=attacker.index
+          @battle.pbDisplay(_INTL("{1} can no longer escape!",opponent.pbThis))
+        end
+      end
+      return ret
+    end
+  end
+end

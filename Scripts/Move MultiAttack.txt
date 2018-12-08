@@ -1,0 +1,21 @@
+# Underneath pbModifyType in PokeBattle_MoveEffects, find Judgment and Technoblast. Paste this underneath:
+
+    elsif isConst?(@id,PBMoves,:MULTIATTACK)
+      type=(getConst(PBTypes,:FIGHTING) || 0) if attacker.hasWorkingItem(:FIGHTINGMEMORY)
+      type=(getConst(PBTypes,:FLYING) || 0) if attacker.hasWorkingItem(:FLYINGMEMORY)
+      type=(getConst(PBTypes,:POISON) || 0) if attacker.hasWorkingItem(:POISONMEMORY)      
+      type=(getConst(PBTypes,:GROUND) || 0) if attacker.hasWorkingItem(:GROUNDMEMORY)
+      type=(getConst(PBTypes,:ROCK) || 0) if attacker.hasWorkingItem(:ROCKMEMORY)
+      type=(getConst(PBTypes,:BUG) || 0) if attacker.hasWorkingItem(:BUGMEMORY)
+      type=(getConst(PBTypes,:GHOST) || 0) if attacker.hasWorkingItem(:GHOSTMEMORY)
+      type=(getConst(PBTypes,:STEEL) || 0) if attacker.hasWorkingItem(:STEELMEMORY)
+      type=(getConst(PBTypes,:FIRE) || 0) if attacker.hasWorkingItem(:FIREMEMORY)
+      type=(getConst(PBTypes,:WATER) || 0) if attacker.hasWorkingItem(:WATERMEMORY)
+      type=(getConst(PBTypes,:GRASS) || 0) if attacker.hasWorkingItem(:GRASSMEMORY)
+      type=(getConst(PBTypes,:ELECTRIC) || 0) if attacker.hasWorkingItem(:ELECTRICMEMORY)
+      type=(getConst(PBTypes,:PSYCHIC) || 0) if attacker.hasWorkingItem(:PSYCHICMEMORY)
+      type=(getConst(PBTypes,:ICE) || 0) if attacker.hasWorkingItem(:ICEMEMORY)
+      type=(getConst(PBTypes,:DRAGON) || 0) if attacker.hasWorkingItem(:DRAGONMEMORY)
+      type=(getConst(PBTypes,:DARK) || 0) if attacker.hasWorkingItem(:DARKMEMORY)
+      type=(getConst(PBTypes,:FAIRY) || 0) if attacker.hasWorkingItem(:FAIRYMEMORY)
+    end

@@ -1,0 +1,10 @@
+# Paste this somewhere in PokeBattle_MoveEffects:
+
+################################################################################
+# Fails if this isn't the user's first turn. (First Impression)
+################################################################################
+class PokeBattle_Move_15A < PokeBattle_Move
+  def pbMoveFailed(attacker,opponent)
+    return (attacker.turncount>1)
+  end
+end

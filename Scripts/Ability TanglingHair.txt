@@ -1,0 +1,8 @@
+# Inside of PokeBattle_Battler, find "def pbEffectsOnDealingDamage", under "if damage>0 && move.isContactMove?
+# and "if !target.damagestate.substitue", paste the following:
+
+        if target.hasWorkingAbility(:TANGLINGHAIR)
+          if user.pbReduceStatWithCause(PBStats::SPEED,1,target,PBAbilities.getName(target.ability))
+            PBDebug.log("[Ability triggered] #{target.pbThis}'s Tangling Hair")
+          end
+        end
