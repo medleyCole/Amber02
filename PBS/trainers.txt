@@ -83,7 +83,7 @@ CHIMCHAR,19
 TRAINER_Jet1
 Jet
 1
-MUDKIP,5
+MUDKIP,5,,,,,,,M,,,,,,Kip,,
 #-------------------------------
 SWIMMER2_F
 Ariel
@@ -219,7 +219,7 @@ Sarah
 POOCHYENA, 4
 #-------------------------------
 MOONS1
-Phoebas and Deimos
+Phobos and Deimos
 6       
 POOCHYENA, 10,,BITE,ROAR,TORMENT,ASSURANCE,,M,,,,,,Cer,,
 SPINARAK,  10,,POISONSTING,ABSORB,INFESTATION,STRINGSHOT,,F,,,,,,Arachne,,
@@ -303,15 +303,11 @@ Heisnia & Schroden
 MEOWTH, 10
 SKITTY, 10 
 #-------------------------------
-MARGARITA
+LOCALLEGEND1
 Margarita
 1
 SHUCKLE, 12
-#-------------------------------
-MARGARITA1
-Margarita
-1
-SHUCKLE, 12
+
 
 
 
