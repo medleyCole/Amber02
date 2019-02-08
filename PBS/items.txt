@@ -74,7 +74,7 @@
 74,SHEDSHELL,Shed Shell,Shed Shells,1,100,"A tough, discarded carapace to be held by a Pokémon. It enables the holder to switch with a waiting Pokémon in battle.",0,0,0,
 75,SMOKEBALL,Smoke Ball,Smoke Balls,1,200,"An item to be held by a Pokémon. It enables the holder to flee from any wild Pokémon without fail.",0,0,0,
 76,LUCKYEGG,Lucky Egg,Lucky Eggs,1,200,"An item to be held by a Pokémon. It is an egg filled with happiness that earns extra Exp. Points in battle.",0,0,0,
-77,EXPSHARE,Exp. Share,Exp. Shares,1,3000,"An item to be held by a Pokémon. The holder gets a share of a battle's Exp. Points without battling.",0,0,0,
+77,EXPSHARE,Exp. Spiltter,Exp. Splitters,1,3000,"An item to be held by a Pokémon. The holder gets a share of a battle's Exp. Points without battling.",0,0,0,
 78,AMULETCOIN,Amulet Coin,Amulet Coins,1,100,"An item to be held by a Pokémon. It doubles a battle's prize money if the holding Pokémon joins in.",0,0,0,
 79,SOOTHEBELL,Soothe Bell,Soothe Bells,1,100,"An item to be held by a Pokémon. It is a bell with a comforting chime that calms the holder and makes it friendly.",0,0,0,
 80,CLEANSETAG,Cleanse Tag,Cleanse Tags,1,200,"An item to be held by a Pokémon. It helps keep wild Pokémon away if the holder is the first one in the party.",0,0,0,
@@ -380,6 +380,7 @@
 380,TM93,TM93,TM93s,4,3000,"The user shrouds itself in electricity and smashes into its target. It also damages the user a little.",3,0,0,WILDCHARGE
 381,TM94,TM94,TM94s,4,1000,"The user attacks with a punch that can shatter a rock. It may also lower the target's Defense stat.",3,0,0,ROCKSMASH
 382,TM95,TM95,TM95s,4,3000,"The user yells as if it is ranting about something, making the target's Sp. Atk stat decrease.",3,0,0,SNARL
+382,TM96,TM96,TM96s,4,3000,"The target is infested and attacked for four to five turns. The target can't flee during this time.",3,0,0,INFESTATION
 383,HM01,HM01,HM01s,4,0,"The target is cut with a scythe or claw. It can also be used to cut down thin trees.",4,0,0,CUT
 384,HM02,HM02,HM02s,4,0,"The user soars, then strikes on the second turn. It can also be used to fly to any familiar town.",4,0,0,FLY
 385,HM03,HM03,HM03s,4,0,"It swamps the area around the user with a giant wave. It can also be used for crossing water.",4,0,0,SURF
@@ -503,7 +504,7 @@
 503,BICYCLE,Bicycle,Bicycles,8,0,"A folding Bicycle that enables much faster movement than the Running Shoes.",2,0,6,
 504,OLDROD,Old Rod,Old Rods,8,0,"An old and beat-up fishing rod. Use it by any body of water to fish for wild aquatic Pokémon.",2,0,6,
 505,GOODROD,Good Rod,Good Rods,8,0,"A new, good-quality fishing rod. Use it by any body of water to fish for wild aquatic Pokémon.",2,0,6,
-506,SUPERROD,Super Rod,Super Rods,8,0,"An awesome, high-tech fishing rod. Use it by any body of water to fish for wild aquatic Pokémon.",2,0,6,
+506,SUPERROD,Rod,Rod,8,0,"Used to catch a variety of water-born pokemon.",2,0,6,
 507,ITEMFINDER,Itemfinder,Itemfinders,8,0,"A device used for finding items. If there is a hidden item nearby when it is used, it emits a signal.",2,0,6,
 508,DOWSINGMACHINE,Dowsing Machine,Dowsing Machines,8,0,"It checks for unseen items in the area and makes noise and lights when it finds something.",2,0,6,
 509,POKERADAR,Poké Radar,Poké Radars,8,0,"A tool that can search out Pokémon that are hiding in grass. Its battery is recharged as you walk.",2,0,6,
@@ -583,7 +584,7 @@
 583,BLUEORB,Blue Orb,Blue Orbs,1,1000,"A shiny blue orb that is said to have a legend tied to it. It's known to have a deep connection to the Hoenn Region.",0,0,0,
 584,FAIRYGEM,Fairy Gem,Fairy Gems,1,200,"A gem with an essence of nature. When held, it strengthens the power of a Fairy-type move only once.",0,0,0,
 585,PRISONBOTTLE,Prison Bottle,Prison Bottles,8,0,"A bottle believed to have been used to seal away the power of a certain Pokémon long, long ago.",5,0,6,
-586,EXPSHAREALL,Exp. Share 2,EXp. Share 2s,8,0,"Turning on this special device will allow all the Pokémon on your team to receive Exp. Points from battles.",2,0,6
+586,EXPALL,Exp. Amp: ON,Exp. Amps: ON,8,0,"Turning on this special device will allow all the Pokémon on your team to receive Exp. Points from battles.",2,0,6
 587,LUMINOUSMOSS,Luminous Moss,Luminous Mosses,1,200,"An item to be held by a Pokémon. It boosts Sp. Def if hit with a Water-type attack. It can only be used once.",0,0,0,
 588,WEAKNESSPOLICY,Weakness Policy,Weakness Policies,1,1000," An item to be held by a Pokémon. Attack and Sp. Atk sharply increase if the holder is hit with a move it's weak to.",0,0,0,
 589,PIXIEPLATE,Pixie Plate,Pixie Plates,1,1000,An item to be held by a Pokémon. It is a stone tablet that boosts the power of Fairy-type moves.,0,0,0,
@@ -595,3 +596,4 @@
 595,SNOWBALL,Snowball,Snowballs,1,200,"An item to be held by a Pokémon. It boosts Attack if hit with a Ice-type attack. It can only be used once.",0,0,0,
 596,FISHINGROD,Fishing Rod,Fishing Rods,8,0,"A Fishing Rod made by Captain Lana. Cast a line over piles of underwater rocks to fish for wild aquatic Pokémon.",2,0,6,
 597,ICESTONE,Ice Stone,Leaf Stones,1,1600,"A peculiar stone that makes certain species of Pokémon evolve. It has an unmistakable snowflake pattern.",1,0,7,
+598,EXPALLOFF,Exp. Amp: Off,Exp. Amps: Off,8,0,"Turning on this special device will allow all the Pokémon on your team to receive Exp. Points from battles.",2,0,6

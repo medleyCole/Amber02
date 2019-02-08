@@ -443,3 +443,34 @@ ShowArea=true
 # Andrea's Respite 
 BattleBack=forest
 ShowArea=true
+#-------------------------------
+[104]
+# Route04S
+BattleBack=fieldArid
+Bicycle=true
+Outdoor=false
+ShowArea=true
+#-------------------------------
+[105]
+# Route04N 
+MapSize=0,
+BattleBack=fieldArid
+Bicycle=true
+Outdoor=false
+ShowArea=true
+#-------------------------------
+[106]
+# Pepper Tree Town
+Bicycle=true
+Outdoor=true
+ShowArea=true
+#-------------------------------
+[107]
+# The Smack-Down Dome
+Outdoor=true
+ShowArea=true
+#-------------------------------
+[110]
+# TestEnivroment
+Bicycle=true
+Outdoor=true

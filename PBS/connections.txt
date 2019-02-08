@@ -36,9 +36,9 @@
 47,East,8,52,West,0
 # Route 2 (21) - Route 7 (47)
 21,East,77,47,West,0
-# Deoro Pokemon Lab (78) - Route02 (77)
+# Deoro Pokemon Lab (78) - Route 02 (77)
 78,South,0,77,North,33
-# Route02W (79) - Route02 (77)
+# Route 02-1 (79) - Route 02 (77)
 79,East,0,77,West,7
 # Route 01 Overlook (42) - Live Oak Beach (88)
 42,South,0,88,North,17
@@ -48,7 +48,7 @@
 42,East,0,33,West,0
 # Live Oak Town (43) - Route 01 (33)
 43,North,10,33,South,0
-# LiveOakForestEntrance (84) - Route 01E (83)
+# Live Oak Forest Entrance (84) - Route 01E (83)
 84,South,0,83,North,16
 # treefiller (87) - Route 01E (83)
 87,North,0,83,South,0

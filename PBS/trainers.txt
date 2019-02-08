@@ -45,7 +45,7 @@ FURRET,29
 PICNICKER
 Susie
 1
-MEOWTH,18
+BUNNELBY,18
 #-------------------------------
 PICNICKER
 Susie,1
@@ -83,7 +83,7 @@ CHIMCHAR,19
 TRAINER_Jet1
 Jet
 1
-MUDKIP,5,,,,,,,M,,,,,,Kip,,
+Froakie,5,,,,,,,M,,,,,,Blue
 #-------------------------------
 SWIMMER2_F
 Ariel
@@ -122,7 +122,7 @@ BLASTOISE,63,SITRUSBERRY
 YOUNGSTER
 Brad
 1
-MEOWTH,5
+BUNNELBY,5
 #-------------------------------
 LASS
 Alexandra
@@ -145,39 +145,38 @@ BUDEW,5
 YOUNGSTER
 Lamar
 1
-TAILLOW, 8
+TAILLOW,8
 #-------------------------------
 LASS
 Lena
 1
-PIDOVE, 8
+PIDOVE,8
 #-------------------------------
 CUEBALL
 Manuel
 2
-BUDEW, 7
-MEOWTH, 7
+BUDEW,7
+BUNNELBY,7
 #-------------------------------
 AROMALADY
 Terri
 2
-SHROOMISH, 7
-LEDYBA, 7
+SHROOMISH,7
+LEDYBA,7
 #-------------------------------
 SCIENTIST
 Sofia
 2
-JOLTIK, 7
-SEEDOT, 7
+SHROOMISH,7
+SEEDOT,7
 #-------------------------------
 BUGFIEND1
 Kyle
 4
-LEDYBA, 8,,    SUPERSONIC,UTURN,,,,,,,,,,Tricker,,5
-KAKUNA, 8,,    HARDEN,INFESTATION,BIDE,,,,,,,,,BuffGuy,,5
-METAPOD, 8,,   HARDEN,INFESTATION,BIDE,,,,,,,,,ToughGuy,,5
-SPINARAK, 10,, TOXIC,BUGBITE,,,,,,,,,,Catcher,,5
-
+LEDYBA,8,,SUPERSONIC,UTURN,,,,,,,,,,Tricker,,5
+KAKUNA,8,,HARDEN,INFESTATION,BIDE,,,,,,,,,BuffGuy,,5
+METAPOD,8,,HARDEN,INFESTATION,BIDE,,,,,,,,,ToughGuy,,5
+SPINARAK,10,,TOXIC,BUGBITE,,,,,,,,,,Catcher,,5
 #-------------------------------
 CAMPERS
 Jared & Maria
@@ -188,126 +187,248 @@ TAILLOW,7
 BUGCATCHER
 Asif
 2
-SPINARAK, 9
-METAPOD, 9
+SPINARAK,9
+METAPOD,9
 #-------------------------------
 BUGCATCHER
 Jeremiah
 1
-KRICKETUNE, 10
+KRICKETUNE,10
 #-------------------------------
 BUGCATCHER
 Chao
 1
-BUTTERFREE, 10
+BUTTERFREE,10
 #-------------------------------
-LASS		
+LASS
 Karren
 3
-COMBEE, 8,,,,,,,M,,,,,,Bizzy,,20
-COMBEE, 8,,,,,,,M,,,,,,Buzzy,,20
-COMBEE, 9,,,,,,,F,,,,,,Queenzy,,5
+COMBEE,8,,,,,,,M,,,,,,Bizzy,,20
+COMBEE,8,,,,,,,M,,,,,,Buzzy,,20
+COMBEE,9,,,,,,,F,,,,,,Queenzy,,5
 #-------------------------------
 YOUNGSTER
 Jimmy
 1
-TAILLOW, 4
+TAILLOW,4
 #-------------------------------
 LASS
 Sarah
 1
-POOCHYENA, 4
+POOCHYENA,4
 #-------------------------------
 MOONS1
 Phobos and Deimos
-6       
-POOCHYENA, 10,,BITE,ROAR,TORMENT,ASSURANCE,,M,,,,,,Cer,,
-SPINARAK,  10,,POISONSTING,ABSORB,INFESTATION,STRINGSHOT,,F,,,,,,Arachne,,
-POOCHYENA, 10,,BITE,ROAR,TORMENT,ASSURANCE,,M,,,,,,Ber,,
-EKANS,     10,,POISONSTING,BITE,GLARE,INFESTATION,,F,,,,,,Medusa,,
-POOCHYENA, 10,,BITE,ROAR,TORMENT,ASSURANCE,,M,,,,,,Rus,,
-PARAS,     10,,POISONPOWDER,SPORE,ABSORB,STUNSPORE,,F,,,,,,Cancer,,
+6
+POOCHYENA,10,,BITE,ROAR,TORMENT,ASSURANCE,0,M,,,,,,Cer
+SPINARAK,10,,POISONSTING,ABSORB,INFESTATION,STRINGSHOT,0,F,,,,,,Arachne
+POOCHYENA,10,,BITE,ROAR,TORMENT,ASSURANCE,0,M,,,,,,Ber
+EKANS,10,,POISONSTING,BITE,GLARE,INFESTATION,0,F,,,,,,Medusa
+POOCHYENA,10,,BITE,ROAR,TORMENT,ASSURANCE,0,M,,,,,,Rus
+PARAS,10,,POISONPOWDER,SPORE,ABSORB,STUNSPORE,0,F,,,,,,Cancer
 #-------------------------------
 MARS1
 Mars
-1      
-HOUNDOOM, 10,,EMBER,ROAR,BITE,SNARL,,M,,,,,,Maximus,,
+1
+HOUNDOOM,10,,EMBER,ROAR,BITE,SNARL,0,M,,,,,,Maximus
 #-------------------------------
 BIGBEE
 Vanessa
-1      
-VESPIQUEN, 10,,GUST,INFESTATION,CONFUSERAY,ROOST,,F,,,,,,Vanessa,,
+1
+VESPIQUEN,10,,GUST,INFESTATION,CONFUSERAY,ROOST,,F,,,,,,Vanessa
 #-------------------------------
 YOUNGSTER
 Antonio
 3
-KRABBY, 10
-TAILLOW, 10
-POOCHYENA, 10
+KRABBY,10
+TAILLOW,10
+POOCHYENA,10
 #-------------------------------
 JOGGER
 Amir
 2
-JOLTIK, 11
-TAILLOW, 11
+KRICKETUNE,11
+TAILLOW,11
 #-------------------------------
 CAMPER
 Jamie
 3
-HOUNDOUR, 10
-BUTTERFREE, 10
-SEEDOT, 10
+HOUNDOUR,10
+BUTTERFREE,10
+SEEDOT,10
 #-------------------------------
 SCHOOLBOY
 Pedro
 1
-KRABBY, 12
+KRABBY,12
 #-------------------------------
 SCHOOLGIRL
 Amaya
 2
-BUNEARY, 11
-SEEL, 11
+BUNEARY,11
+SEEL,11
 #-------------------------------
 WORKER
 Bill
 2
-KOFFING, 11
-GULPIN, 11
+KOFFING,11
+GULPIN,11
 #-------------------------------
 TWINS
 Nina & Zoe
 2
-SKITTY, 12
-SKITTY, 12
-#-------------------------------
-SKULLGRUNTS
-Micky & Nikki
-4
-SKITTY, 12
-KOFFING, 12
-EKANS, 12
-GULPIN, 12
+SKITTY,12
+SKITTY,12
 #-------------------------------
 DARLING
 Mia
 4
-TAILLOW, 12
-SPINARAK, 12
-EKANS, 12
-GULPIN, 12
+TAILLOW,12
+SPINARAK,12
+EKANS,12
+GULPIN,12
 #-------------------------------
 SCIENTISTS
 Heisnia & Schroden
 2
-MEOWTH, 10
-SKITTY, 10 
+BUNNELBY,10
+SKITTY,10
 #-------------------------------
 LOCALLEGEND1
 Margarita
+4
+CORPHISH,11,,BUBBLEBEAM,VICEGRIP,PROTECT,TAUNT,0,F,,,,,,Crabby Pattie
+BUTTERFREE,11,,CONFUSION,GUST,SLEEPPOWDER,SUPERSONIC,0,F,,,,,,Betty Free
+SHUCKLE,12,GRIPCLAW,STICKYWEB,ROLLOUT,ENCORE,INFESTATION,0,M,,,,,,Mr. Noodles
+KRICKETUNE,11,,FURYCUTTER,SING,FOCUSENERGY,FELLSTINGER,0,M,,,,,,Manny Moustache
+#-------------------------------
+LOCALLEGEND2
+Margarita
 1
-SHUCKLE, 12
-
-
-
-
+SHUCKLE,12,GRIPCLAW,STICKYWEB,ROLLOUT,ENCORE,INFESTATION,,M,,,,,,Mr. Noodles
+#-------------------------------
+HIKER
+Simon
+2
+CUBONE,11
+DUCKLETT,11
+#-------------------------------
+CAMPERS
+Josh & Amira
+4
+KRICKETUNE,9
+TAILLOW,9
+SEEDOT,9
+DRILBUR,9
+#-------------------------------
+JOGGER
+Amir
+3
+DRILBUR,10
+BUNNELBY,10
+ROSELIA,10
+#-------------------------------
+POKEPHANATIC
+Bobby
+3
+PHANPY,10
+PHANPY,10
+PHANPY,10
+#-------------------------------
+TEAMROCKET04S
+Gahss & Lenny
+4
+EKANS,10,,,,,,0,F,,,,,,Choker
+POOCHYENA,11,,,,,,0,M,,,,,,Biter
+SANDILE,10,,,,,,0,M,,,,,,Clamper
+SPINARAK,11,,,,,,0,F,,,,,,Sally <3
+#-------------------------------
+FISHERMAN
+Richard
+2
+GOLDEEN,11
+DUCKLETT,11
+#-------------------------------
+FISHERMAN
+Jose
+3
+LOTAD,10
+WOOPER,10
+MARILL,10
+#-------------------------------
+BUGCATCHER
+Luke
+3
+LEDYBA,10
+CORPHISH,10
+BUTTERFREE,10
+#-------------------------------
+REARADMIRAL
+Reginald Boyle
+5
+CORPHISH,11,,PROTECT,VICEGRIP,BUBBLE,ROCKTOMB,0,M,,,,,,Sir Snips
+TAILLOW,11,,WINGATTACK,FOCUSENERGY,WINGATTACK,WINGATTACK,0,,,,,,,Cpt. Cawsly
+LOMBRE,11,,FAKEOUT,BUBBLE,MEGADRAIN,RAINDANCE,0,F,,,,,,Paddington
+GOLDEEN,11,,WATERPULSE,SUPERSONIC,HORNATTACK,RAINDANCE,0,,,,,,,General Gills
+DUCKLETT,12,,WATERGUN,RAINDANCE,WINGATTACK,WATERPULSE,0,,,,,,,Duke Ducksly
+#-------------------------------
+TESTER
+Testman
+1
+MACHOP,4,,VACUUMWAVE,VACUUMWAVE,VACUUMWAVE,VACUUMWAVE,0,M,,,,,,OnePunchBoy
+#-------------------------------
+TRAINER_CHRIS1
+Chris
+6
+CROAGUNK,11,,KARATECHOP,PURSUIT,MUDSLAP,TAUNT,0,M
+PIDOVE,11,,GUST,QUICKATTACK,GROWL,ROOST,0,F
+SANDILE,11,,BITE,SANDTOMB,TORMENT,RAGE,0,F
+MARILL,11,LEFTOVERS,ROLLOUT,BUBBLE,DEFENSECURL,CHARM,0,F
+NUZLEAF,13,,QUICKATTACK,RAZORLEAF,FAKEOUT,TORMENT,0,M
+CHARMANDER,12,,EMBER,SCRATCH,SMOKESCREEN,METALCLAW,0,M
+#-------------------------------
+HIKER
+Jamal
+3
+TYROGUE,11
+EKANS,11
+CUBONE,11
+#-------------------------------
+BLACKBELTS
+Bruce & Jacky
+4
+TYROGUE,11
+TYROGUE,11
+HITMONLEE,12
+HITMONCHAN,12
+#-------------------------------
+BLACKBELT
+Donnie
+2
+TYROGUE,12
+HITMONTOP,12
+#-------------------------------
+OFFICER_0
+Tilly
+2
+DRILBUR,12
+CROAGUNK,12
+#-------------------------------
+SCHOOLKIDS
+Billy & Mandy
+4
+CUBONE,11
+POOCHYENA,11
+PIDOVE,11
+LOTAD,11
+#-------------------------------
+CUEBALL
+Erik
+1
+MACHOP,13,,FINALGAMBIT,FINALGAMBIT,FINALGAMBIT,FINALGAMBIT
+#-------------------------------
+CRUSHGIRL
+Mahima
+2
+MACHOP,12,
+SANDILE,12,
