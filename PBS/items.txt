@@ -597,3 +597,4 @@
 596,FISHINGROD,Fishing Rod,Fishing Rods,8,0,"A Fishing Rod made by Captain Lana. Cast a line over piles of underwater rocks to fish for wild aquatic Pokémon.",2,0,6,
 597,ICESTONE,Ice Stone,Leaf Stones,1,1600,"A peculiar stone that makes certain species of Pokémon evolve. It has an unmistakable snowflake pattern.",1,0,7,
 598,EXPALLOFF,Exp. Amp: Off,Exp. Amps: Off,8,0,"Turning on this special device will allow all the Pokémon on your team to receive Exp. Points from battles.",2,0,6
+599,TM101,TM101,TM101s,4,3000,"The target is infested and attacked for four to five turns. The target can't flee during this time.",3,0,0,INFESTATION
