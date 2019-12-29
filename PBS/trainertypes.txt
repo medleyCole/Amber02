@@ -101,3 +101,4 @@
 98,TRAINER_CHRIS1,Trainer,70,00 - Chris,,,Male,200,
 99,BLACKBELTS,Blackbelts,60,,,BLACKBELT,Male,80,
 100,SCHOOLKIDS,School Kids,40,LASS,,,Mixed,,
+101,POKEWATCH1,PokeWatch Reporters,60,,,,Mixed,100,

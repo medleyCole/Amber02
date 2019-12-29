@@ -292,7 +292,7 @@ RegionalNumbers=10,24,33
 Kind=Worm
 Pokedex=Its voracious appetite compels it to devour leaves bigger than itself without hesitation. It releases a terribly strong odor from its antennae.
 BattlerPlayerY=0
-BattlerEnemyY=27
+BattlerEnemyY=20
 BattlerAltitude=0
 Evolutions=METAPOD,Level,7
 #-------------------------------
@@ -3561,7 +3561,7 @@ Evolutions=KINGDRA,TradeItem,DRAGONSCALE
 [118]
 Name=Goldeen
 InternalName=GOLDEEN
-Type1=WATER
+Type1=WATER,NORMAL
 BaseStats=45,67,60,63,35,50
 GenderRate=Female50Percent
 GrowthRate=Medium
@@ -3591,7 +3591,7 @@ Evolutions=SEAKING,Level,33
 [119]
 Name=Seaking
 InternalName=SEAKING
-Type1=WATER
+Type1=WATER,NORMAL
 BaseStats=80,92,65,68,65,80
 GenderRate=Female50Percent
 GrowthRate=Medium
@@ -12415,7 +12415,7 @@ WildItemCommon=HONEY
 WildItemUncommon=HONEY
 WildItemRare=HONEY
 BattlerPlayerY=0
-BattlerEnemyY=37
+BattlerEnemyY=27
 BattlerAltitude=13
 Evolutions=VESPIQUEN,LevelFemale,21
 #-------------------------------
@@ -19304,8 +19304,8 @@ Color=Brown
 Shape=6
 Kind=Digging
 Pokedex=It has ears like shovels. Digging holes strengthens its ears so much that they can sever thick roots effortlessly.
-BattlerPlayerY=24
-BattlerEnemyY=41
+BattlerPlayerY=30
+BattlerEnemyY=49
 BattlerAltitude=0
 Evolutions=DIGGERSBY,Level,20
 #-------------------------------
