@@ -454,7 +454,7 @@ ShowArea=true
 [105]
 # Route04N 
 MapSize=0,
-BattleBack=fieldArid
+BattleBack=Cave
 Bicycle=true
 Outdoor=false
 ShowArea=true
@@ -475,20 +475,19 @@ ShowArea=true
 Bicycle=true
 Outdoor=true
 #-------------------------------
+[118]
+# Route04s Cave2
+MapSize=0,
+BattleBack=cave
+ShowArea=true
+#-------------------------------
 [127]
 # Route04n Cave
 MapSize=0,
 BattleBack=cave
 ShowArea=true
 #-------------------------------
-[118]
-# Route04s Cave1
-MapSize=0,
-BattleBack=cave
-ShowArea=true
-#-------------------------------
-[118]
-# Route04s Cave2
-MapSize=0,
-BattleBack=cave
-ShowArea=true
+[129]
+# Gym
+BattleBack=Cave
+Outdoor=false
