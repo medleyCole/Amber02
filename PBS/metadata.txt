@@ -214,7 +214,7 @@ ShowArea=true
 # Route 01 Overlook
 BattleBack=fieldArid
 Outdoor=true
-ShowArea=true
+ShowArea=false
 #-------------------------------
 [043]
 # Live Oak Town
@@ -454,9 +454,9 @@ ShowArea=true
 [105]
 # Route04N 
 MapSize=0,
-BattleBack=Cave
+BattleBack=fieldArid
 Bicycle=true
-Outdoor=false
+Outdoor=true
 ShowArea=true
 #-------------------------------
 [106]
@@ -475,17 +475,23 @@ ShowArea=true
 Bicycle=true
 Outdoor=true
 #-------------------------------
+[114]
+# Route04s Cave1
+MapSize=0,
+BattleBack=cave
+ShowArea=false
+#-------------------------------
 [118]
 # Route04s Cave2
 MapSize=0,
 BattleBack=cave
-ShowArea=true
+ShowArea=false
 #-------------------------------
 [127]
 # Route04n Cave
 MapSize=0,
 BattleBack=cave
-ShowArea=true
+ShowArea=false
 #-------------------------------
 [129]
 # Gym

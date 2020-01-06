@@ -102,3 +102,4 @@
 99,BLACKBELTS,Blackbelts,60,,,BLACKBELT,Male,80,
 100,SCHOOLKIDS,School Kids,40,LASS,,,Mixed,,
 101,POKEWATCH1,PokeWatch Reporters,60,,,,Mixed,100,
+102,RETIRED,Retired Gentleman,0,,,,Male,100,
