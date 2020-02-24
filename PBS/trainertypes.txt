@@ -103,3 +103,4 @@
 100,SCHOOLKIDS,School Kids,40,,,LASS,Mixed,
 101,POKEWATCH1,PokeWatch Reporters,60,,,,Mixed,100,
 102,RETIRED,Retired Gentleman,0,,,,Male,100,
+103,PETREL1,Team Rocket Admin,80,01 - MarsBattle1,,,Male,200,
