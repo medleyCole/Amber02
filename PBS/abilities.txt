@@ -236,3 +236,4 @@
 236,EVASIVEREFLEX,Evasive Reflex,"Grants immuntiy to super effective PHYSICAL attacks"
 237,SASERFIELD,Saser Field,"Special Attack damage recieved is halved"
 238,LEECHFANG,Leech Fang,"Biting moves regain 50% HP from damage dealt to oppoenent"
+239,MOLTENFORM,Molten Form, "A Pokemon with this ability takes no damage from Water attacks. Water attacks lower this Pokemon's speed. "
