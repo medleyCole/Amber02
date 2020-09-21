@@ -3302,7 +3302,7 @@ Also something... <i>weird</i> out on the beach.
 Marsha: Oh! \PN. That was the name we didn't recognize on Sequoia's list! Well you were the first to make it to me so good work!
 Marsha: Oh! \PN. That was the name we didn't recognize on Sequoia's list! Well you were the first to make it to me so good work!
 Marsha: Jerry's actually out at the challenge right now putting the final touches on it.
-Marsha: "Jerry's actually out at the challenge right now putting the final touches on it."
+Marsha: Jerry's actually out at the challenge right now putting the final touches on it.
 Marsha: Jerry's one of Sequoia's best assistants! He heads up the lab here.
 Marsha: Jerry's one of Sequoia's best assistants! He heads up the lab here.
 If you look around a bit you might notice he has quite the passion for the Combee population of Live Oak Forest.
@@ -3312,7 +3312,7 @@ Marsha: Well I guess while he’s wrapping things up you could hang around and I
 ???: Girls girls! It's awful! A swarm of beedrill is on the loose!
 ???: Girls girls! It's awful! A swarm of beedrill is on the loose!
 Marsha: Why are we always your "girls"?
-Marsha: Why are we always your "girls"?
+Marsha: ...why are we always your "girls"?
 ???: They're taking over the forest! They're practically everywhere! It’s like a rash on top of a rash!
 ???: They're taking over the forest! They're practically everywhere! It’s like a rash on top of a rash! 
 ???: And the worst part is they're after the Combee honey! And now...
@@ -3320,7 +3320,7 @@ Marsha: Why are we always your "girls"?
 ???: Wait! OH NOO!!
 ???: Wait! OH NOO!!
 Marsha: Oh no what?!
-Marsha: "'Oh no' what?!"
+Marsha: "Oh no" what?!
 ???: A trainer's here for the challenge!
 ???: A trainer's here for the challenge!
 Marsha: \PN This is Jerry. Jerry this is \PN.
@@ -3328,7 +3328,7 @@ Marsha: \PN This is Jerry. Jerry this is \PN.
 Jerry: You're killing me here Marsha! Now's not the time for introductions! The forest is in trouble!
 Jerry: You're killing me here Marsha! Now's not the time for introductions! The forest is in trouble!
 Marsha: Look Jerry I’m sure it’s a small swarm and it’ll fizzle out.
-Marsha: Look Jerry I’m sure it’s a small swarm and it’ll fizzle out." 
+Marsha: Look Jerry I’m sure it’s a small swarm and it’ll fizzle out.
 Marsha: You’re probably just anxious because you have to coordinate the challenge.
 Marsha: You’re probably just anxious because you have to coordinate the challenge.
 Jerry: The beedrill are everywhere though! I'm tellin' yah!
