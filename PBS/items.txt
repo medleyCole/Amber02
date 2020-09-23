@@ -598,4 +598,4 @@
 597,ICESTONE,Ice Stone,Leaf Stones,1,1600,"A peculiar stone that makes certain species of Pokémon evolve. It has an unmistakable snowflake pattern.",1,0,7,
 598,EXPALLOFF,TeamEXP: Off,TeamEXPS: Off,8,0,"Turning on this special device will allow all the Pokémon on your team to receive Exp. Points from battles.",2,0,6
 599,TM101,TM101,TM101s,4,3000,"The target is infested and attacked for four to five turns. The target can't flee during this time.",3,0,0,INFESTATION
-599,TM102,TM102,TM102s,4,3000,"The user lets loose a horribly loud shout with the power to damage.",3,0,0,HYPERVOICE
+600,TM102,TM102,TM102s,4,3000,"The user lets loose a horribly loud shout with the power to damage.",3,0,0,HYPERVOICE
