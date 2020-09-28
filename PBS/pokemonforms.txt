@@ -2,118 +2,191 @@
 [PICHU-1]
 FormName=Spiky-Eared
 BattlerEnemyY=48
+BattlerPlayerY=0
+BattlerAltitude=0
 #-------------------------------
 [UNOWN-1]
 FormName=Bear
+BattlerEnemyY=25
+BattlerPlayerY=8
+BattlerAltitude=19
 #-------------------------------
 [UNOWN-2]
 FormName=Chase
 BattlerPlayerY=0
 BattlerEnemyY=4
+BattlerAltitude=19
 #-------------------------------
 [UNOWN-3]
 FormName=Direct
 BattlerPlayerY=0
 BattlerEnemyY=4
+BattlerAltitude=19
 #-------------------------------
 [UNOWN-4]
 FormName=Engage
+BattlerEnemyY=25
+BattlerPlayerY=8
+BattlerAltitude=19
 #-------------------------------
 [UNOWN-5]
 FormName=Find
+BattlerEnemyY=25
+BattlerPlayerY=8
+BattlerAltitude=19
 #-------------------------------
 [UNOWN-6]
 FormName=Give
+BattlerEnemyY=25
+BattlerPlayerY=8
+BattlerAltitude=19
 #-------------------------------
 [UNOWN-7]
 FormName=Help
 BattlerPlayerY=0
 BattlerEnemyY=4
+BattlerAltitude=19
 #-------------------------------
 [UNOWN-8]
 FormName=Increase
+BattlerEnemyY=25
+BattlerPlayerY=8
+BattlerAltitude=19
 #-------------------------------
 [UNOWN-9]
 FormName=Join
+BattlerEnemyY=25
+BattlerPlayerY=8
+BattlerAltitude=19
 #-------------------------------
 [UNOWN-10]
 FormName=Keep
+BattlerEnemyY=25
+BattlerPlayerY=8
+BattlerAltitude=19
 #-------------------------------
 [UNOWN-11]
 FormName=Laugh
+BattlerEnemyY=25
+BattlerPlayerY=8
+BattlerAltitude=19
 #-------------------------------
 [UNOWN-12]
 FormName=Make
 BattlerEnemyY=4
+BattlerPlayerY=8
+BattlerAltitude=19
 #-------------------------------
 [UNOWN-13]
 FormName=Nuzzle
 BattlerPlayerY=2
+BattlerEnemyY=25
+BattlerAltitude=19
 #-------------------------------
 [UNOWN-14]
 FormName=Observe
 BattlerPlayerY=5
 BattlerEnemyY=9
+BattlerAltitude=19
 #-------------------------------
 [UNOWN-15]
 FormName=Perform
+BattlerEnemyY=25
+BattlerPlayerY=8
+BattlerAltitude=19
 #-------------------------------
 [UNOWN-16]
 FormName=Quicken
 BattlerPlayerY=0
 BattlerEnemyY=4
+BattlerAltitude=19
 #-------------------------------
 [UNOWN-17]
 FormName=Reassure
+BattlerEnemyY=25
+BattlerPlayerY=8
+BattlerAltitude=19
 #-------------------------------
 [UNOWN-18]
 FormName=Search
+BattlerEnemyY=25
+BattlerPlayerY=8
+BattlerAltitude=19
 #-------------------------------
 [UNOWN-19]
 FormName=Tell
+BattlerEnemyY=25
+BattlerPlayerY=8
+BattlerAltitude=19
 #-------------------------------
 [UNOWN-20]
 FormName=Undo
 BattlerPlayerY=2
+BattlerEnemyY=25
+BattlerAltitude=19
 #-------------------------------
 [UNOWN-21]
 FormName=Vanish
+BattlerEnemyY=25
+BattlerPlayerY=8
+BattlerAltitude=19
 #-------------------------------
 [UNOWN-22]
 FormName=Want
 BattlerPlayerY=2
+BattlerEnemyY=25
+BattlerAltitude=19
 #-------------------------------
 [UNOWN-23]
 FormName=XXXXX
+BattlerEnemyY=25
+BattlerPlayerY=8
+BattlerAltitude=19
 #-------------------------------
 [UNOWN-24]
 FormName=Yield
+BattlerEnemyY=25
+BattlerPlayerY=8
+BattlerAltitude=19
 #-------------------------------
 [UNOWN-25]
 FormName=Zoom
+BattlerEnemyY=25
+BattlerPlayerY=8
+BattlerAltitude=19
 #-------------------------------
 [UNOWN-26]
 FormName=?????
+BattlerEnemyY=25
+BattlerPlayerY=8
+BattlerAltitude=19
 #-------------------------------
 [UNOWN-27]
 FormName=!!!!!
+BattlerEnemyY=25
+BattlerPlayerY=8
+BattlerAltitude=19
 #-------------------------------
 [CASTFORM-1]
 FormName=Sunny Form
 Type1=FIRE
 BattlerEnemyY=6
+BattlerPlayerY=0
+BattlerAltitude=20
 #-------------------------------
 [CASTFORM-2]
 FormName=Rainy Form
 Type1=WATER
 BattlerPlayerY=2
 BattlerEnemyY=6
+BattlerAltitude=20
 #-------------------------------
 [CASTFORM-3]
 FormName=Snowy Form
 Type1=ICE
 BattlerPlayerY=5
 BattlerEnemyY=9
+BattlerAltitude=20
 #-------------------------------
 [DEOXYS-1]
 FormName=Attack Forme
@@ -122,6 +195,7 @@ EffortPoints=0,2,0,0,1,0
 Moves=1,LEER,1,WRAP,9,NIGHTSHADE,17,TELEPORT,25,TAUNT,33,PURSUIT,41,PSYCHIC,49,SUPERPOWER,57,PSYCHOSHIFT,65,ZENHEADBUTT,73,COSMICPOWER,81,ZAPCANNON,89,PSYCHOBOOST,97,HYPERBEAM
 BattlerPlayerY=8
 BattlerEnemyY=5
+BattlerAltitude=0
 #-------------------------------
 [DEOXYS-2]
 FormName=Defense Forme
@@ -129,6 +203,8 @@ BaseStats=50,70,160,90,70,160
 EffortPoints=0,0,2,0,0,1
 Moves=1,LEER,1,WRAP,9,NIGHTSHADE,17,TELEPORT,25,KNOCKOFF,33,SPIKES,41,PSYCHIC,49,SNATCH,57,PSYCHOSHIFT,65,ZENHEADBUTT,73,IRONDEFENSE,73,AMNESIA,81,RECOVER,89,PSYCHOBOOST,97,COUNTER,97,MIRRORCOAT
 BattlerEnemyY=9
+BattlerPlayerY=0
+BattlerAltitude=0
 #-------------------------------
 [DEOXYS-3]
 FormName=Speed Forme
@@ -137,16 +213,19 @@ EffortPoints=0,0,0,3,0,0
 Moves=1,LEER,1,WRAP,9,NIGHTSHADE,17,DOUBLETEAM,25,KNOCKOFF,33,PURSUIT,41,PSYCHIC,49,SWIFT,57,PSYCHOSHIFT,65,ZENHEADBUTT,73,AGILITY,81,RECOVER,89,PSYCHOBOOST,97,EXTREMESPEED
 BattlerPlayerY=6
 BattlerEnemyY=14
+BattlerAltitude=0
 #-------------------------------
 [BURMY-1]
 FormName=Sandy Cloak
 BattlerPlayerY=9
 BattlerEnemyY=13
+BattlerAltitude=15
 #-------------------------------
 [BURMY-2]
 FormName=Trash Cloak
 BattlerPlayerY=9
 BattlerEnemyY=13
+BattlerAltitude=15
 #-------------------------------
 [WORMADAM-1]
 FormName=Sandy Cloak
@@ -155,6 +234,9 @@ Type2=GROUND
 BaseStats=60,79,105,36,59,85
 EffortPoints=0,0,2,0,0,0
 Moves=1,TACKLE,10,PROTECT,15,BUGBITE,20,HIDDENPOWER,23,CONFUSION,26,ROCKBLAST,29,HARDEN,32,PSYBEAM,35,CAPTIVATE,38,FLAIL,41,ATTRACT,44,PSYCHIC,47,FISSURE
+BattlerEnemyY=39
+BattlerPlayerY=0
+BattlerAltitude=12
 #-------------------------------
 [WORMADAM-2]
 FormName=Trash Cloak
@@ -163,16 +245,27 @@ Type2=STEEL
 BaseStats=60,69,95,36,69,95
 EffortPoints=0,0,1,0,0,1
 Moves=1,TACKLE,10,PROTECT,15,BUGBITE,20,HIDDENPOWER,23,CONFUSION,26,MIRRORSHOT,29,METALSOUND,32,PSYBEAM,35,CAPTIVATE,38,FLAIL,41,ATTRACT,44,PSYCHIC,47,IRONHEAD
+BattlerEnemyY=39
+BattlerPlayerY=0
+BattlerAltitude=12
 #-------------------------------
 [CHERRIM-1]
 FormName=Sunshine Form
 BattlerPlayerY=4
+BattlerEnemyY=16
+BattlerAltitude=0
 #-------------------------------
 [SHELLOS-1]
 FormName=East Sea
+BattlerEnemyY=12
+BattlerPlayerY=0
+BattlerAltitude=0
 #-------------------------------
 [GASTRODON-1]
 FormName=East Sea
+BattlerEnemyY=20
+BattlerPlayerY=0
+BattlerAltitude=0
 #-------------------------------
 [ROTOM-1]
 FormName=Heat Rotom
@@ -180,6 +273,7 @@ Type1=ELECTRIC
 Type2=FIRE
 BattlerPlayerY=2
 BattlerEnemyY=6
+BattlerAltitude=13
 #-------------------------------
 [ROTOM-2]
 FormName=Wash Rotom
@@ -236,74 +330,127 @@ Moves=1,GROWTH,10,MAGICALLEAF,19,LEECHSEED,28,QUICKATTACK,37,SWEETSCENT,46,NATUR
 Height=0.4
 Weight=5.2
 BattlerEnemyY=4
+BattlerPlayerY=0
+BattlerAltitude=0
 #-------------------------------
 [ARCEUS-1]
 FormName=Fighting Type
 Type1=FIGHTING
+BattlerEnemyY=17
+BattlerPlayerY=0
+BattlerAltitude=0
 #-------------------------------
 [ARCEUS-2]
 FormName=Flying Type
 Type1=FLYING
+BattlerEnemyY=17
+BattlerPlayerY=0
+BattlerAltitude=0
 #-------------------------------
 [ARCEUS-3]
 FormName=Poison Type
 Type1=POISON
+BattlerEnemyY=17
+BattlerPlayerY=0
+BattlerAltitude=0
 #-------------------------------
 [ARCEUS-4]
 FormName=Ground Type
 Type1=GROUND
+BattlerEnemyY=17
+BattlerPlayerY=0
+BattlerAltitude=0
 #-------------------------------
 [ARCEUS-5]
 FormName=Rock Type
 Type1=ROCK
+BattlerEnemyY=17
+BattlerPlayerY=0
+BattlerAltitude=0
 #-------------------------------
 [ARCEUS-6]
 FormName=Bug Type
 Type1=BUG
+BattlerEnemyY=17
+BattlerPlayerY=0
+BattlerAltitude=0
 #-------------------------------
 [ARCEUS-7]
 FormName=Ghost Type
 Type1=GHOST
+BattlerEnemyY=17
+BattlerPlayerY=0
+BattlerAltitude=0
 #-------------------------------
 [ARCEUS-8]
 FormName=Steel Type
 Type1=STEEL
+BattlerEnemyY=17
+BattlerPlayerY=0
+BattlerAltitude=0
 #-------------------------------
 [ARCEUS-9]
 FormName=Unknown Type
 Type1=QMARKS
+BattlerEnemyY=17
+BattlerPlayerY=0
+BattlerAltitude=0
 #-------------------------------
 [ARCEUS-10]
 FormName=Fire Type
 Type1=FIRE
+BattlerEnemyY=17
+BattlerPlayerY=0
+BattlerAltitude=0
 #-------------------------------
 [ARCEUS-11]
 FormName=Water Type
 Type1=WATER
+BattlerEnemyY=17
+BattlerPlayerY=0
+BattlerAltitude=0
 #-------------------------------
 [ARCEUS-12]
 FormName=Grass Type
 Type1=GRASS
+BattlerEnemyY=17
+BattlerPlayerY=0
+BattlerAltitude=0
 #-------------------------------
 [ARCEUS-13]
 FormName=Electric Type
 Type1=ELECTRIC
+BattlerEnemyY=17
+BattlerPlayerY=0
+BattlerAltitude=0
 #-------------------------------
 [ARCEUS-14]
 FormName=Psychic Type
 Type1=PSYCHIC
+BattlerEnemyY=17
+BattlerPlayerY=0
+BattlerAltitude=0
 #-------------------------------
 [ARCEUS-15]
 FormName=Ice Type
 Type1=ICE
+BattlerEnemyY=17
+BattlerPlayerY=0
+BattlerAltitude=0
 #-------------------------------
 [ARCEUS-16]
 FormName=Dragon Type
 Type1=DRAGON
+BattlerEnemyY=17
+BattlerPlayerY=0
+BattlerAltitude=0
 #-------------------------------
 [ARCEUS-17]
 FormName=Dark Type
 Type1=DARK
+BattlerEnemyY=17
+BattlerPlayerY=0
+BattlerAltitude=0
 #-------------------------------
 [BASCULIN-1]
 FormName=Blue-Striped
@@ -311,6 +458,8 @@ Abilities=ROCKHEAD,ADAPTABILITY
 HiddenAbility=MOLDBREAKER
 WildItemUncommon=DEEPSEASCALE
 BattlerEnemyY=13
+BattlerPlayerY=0
+BattlerAltitude=10
 #-------------------------------
 [DARMANITAN-1]
 FormName=Zen Mode
@@ -319,24 +468,44 @@ Type2=PSYCHIC
 BaseStats=105,30,105,55,140,105
 EffortPoints=0,0,0,0,2,0
 BattlerPlayerY=3
+BattlerEnemyY=33
+BattlerAltitude=0
 #-------------------------------
 [DEERLING-1]
 FormName=Summer Form
+BattlerEnemyY=12
+BattlerPlayerY=0
+BattlerAltitude=0
 #-------------------------------
 [DEERLING-2]
 FormName=Autumn Form
+BattlerEnemyY=12
+BattlerPlayerY=0
+BattlerAltitude=0
 #-------------------------------
 [DEERLING-3]
 FormName=Winter Form
+BattlerEnemyY=12
+BattlerPlayerY=0
+BattlerAltitude=0
 #-------------------------------
 [SAWSBUCK-1]
 FormName=Summer Form
+BattlerEnemyY=17
+BattlerPlayerY=0
+BattlerAltitude=0
 #-------------------------------
 [SAWSBUCK-2]
 FormName=Autumn Form
+BattlerEnemyY=17
+BattlerPlayerY=0
+BattlerAltitude=0
 #-------------------------------
 [SAWSBUCK-3]
 FormName=Winter Form
+BattlerEnemyY=17
+BattlerPlayerY=0
+BattlerAltitude=0
 #-------------------------------
 [TORNADUS-1]
 FormName=Therian Forme
@@ -360,6 +529,7 @@ Height=3.0
 Shape=6
 BattlerEnemyY=32
 BattlerAltitude=7
+BattlerPlayerY=0
 #-------------------------------
 [LANDORUS-1]
 FormName=Therian Forme
@@ -382,6 +552,7 @@ Moves=1,ICYWIND,1,DRAGONRAGE,8,IMPRISON,15,ANCIENTPOWER,22,ICEBEAM,29,DRAGONBREA
 Height=3.6
 BattlerPlayerY=12
 BattlerEnemyY=9
+BattlerAltitude=0
 #-------------------------------
 [KYUREM-2]
 FormName=Black Kyurem
@@ -392,9 +563,13 @@ Moves=1,ICYWIND,1,DRAGONRAGE,8,IMPRISON,15,ANCIENTPOWER,22,ICEBEAM,29,DRAGONBREA
 Height=3.3
 BattlerPlayerY=2
 BattlerEnemyY=10
+BattlerAltitude=0
 #-------------------------------
 [KELDEO-1]
 FormName=Resolute Form
+BattlerEnemyY=17
+BattlerPlayerY=0
+BattlerAltitude=0
 #-------------------------------
 [MELOETTA-1]
 FormName=Pirouette Forme
@@ -404,15 +579,28 @@ BaseStats=100,128,90,128,77,77
 EffortPoints=0,1,1,1,0,0
 BattlerPlayerY=2
 BattlerEnemyY=6
+BattlerAltitude=16
 #-------------------------------
 [GENESECT-1]
 FormName=Shock Drive
+BattlerEnemyY=0
+BattlerPlayerY=0
+BattlerAltitude=0
 #-------------------------------
 [GENESECT-2]
 FormName=Burn Drive
+BattlerEnemyY=0
+BattlerPlayerY=0
+BattlerAltitude=0
 #-------------------------------
 [GENESECT-3]
 FormName=Chill Drive
+BattlerEnemyY=0
+BattlerPlayerY=0
+BattlerAltitude=0
 #-------------------------------
 [GENESECT-4]
 FormName=Douse Drive
+BattlerEnemyY=0
+BattlerPlayerY=0
+BattlerAltitude=0
