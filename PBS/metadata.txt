@@ -442,6 +442,7 @@ ShowArea=true
 [103]
 # Andrea's Respite 
 BattleBack=forest
+WildBattleBGM=00 - wildBattleGarden.ogg
 ShowArea=true
 #-------------------------------
 [104]
@@ -479,21 +480,25 @@ Outdoor=true
 # Route04s Cave1
 MapSize=0,
 BattleBack=cave
+WildBattleBGM=00 - wildBattleGarden.ogg
 ShowArea=false
 #-------------------------------
 [118]
 # Route04s Cave2
 MapSize=0,
 BattleBack=cave
+WildBattleBGM=00 - wildBattleGarden.ogg
 ShowArea=false
 #-------------------------------
 [127]
 # Route04n Cave
 MapSize=0,
 BattleBack=cave
+WildBattleBGM=00 - wildBattleGarden.ogg
 ShowArea=false
 #-------------------------------
 [129]
 # Gym
 BattleBack=Cave
+WildBattleBGM=00 - wildBattleGarden.ogg
 Outdoor=false
