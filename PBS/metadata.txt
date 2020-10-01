@@ -468,11 +468,13 @@ ShowArea=true
 #-------------------------------
 [107]
 # The Smack-Down Dome
+BattleBack=SmackDown
 Outdoor=true
 ShowArea=true
 #-------------------------------
 [110]
 # TestEnivroment
+BattleBack=SmackDown
 Bicycle=true
 Outdoor=true
 #-------------------------------

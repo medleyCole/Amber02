@@ -251,20 +251,20 @@ BattlerAltitude=12
 #-------------------------------
 [CHERRIM-1]
 FormName=Sunshine Form
-BattlerPlayerY=4
+BattlerPlayerY=7
 BattlerEnemyY=16
 BattlerAltitude=0
 #-------------------------------
 [SHELLOS-1]
 FormName=East Sea
 BattlerEnemyY=12
-BattlerPlayerY=0
+BattlerPlayerY=10
 BattlerAltitude=0
 #-------------------------------
 [GASTRODON-1]
 FormName=East Sea
 BattlerEnemyY=20
-BattlerPlayerY=0
+BattlerPlayerY=15
 BattlerAltitude=0
 #-------------------------------
 [ROTOM-1]
@@ -279,23 +279,23 @@ BattlerAltitude=13
 FormName=Wash Rotom
 Type1=ELECTRIC
 Type2=WATER
-BattlerPlayerY=10
-BattlerEnemyY=17
+BattlerPlayerY=21
+BattlerEnemyY=38
 BattlerAltitude=9
 #-------------------------------
 [ROTOM-3]
 FormName=Frost Rotom
 Type1=ELECTRIC
 Type2=ICE
-BattlerPlayerY=15
-BattlerEnemyY=19
+BattlerPlayerY=40
+BattlerEnemyY=40
 BattlerAltitude=11
 #-------------------------------
 [ROTOM-4]
 FormName=Fan Rotom
 Type1=ELECTRIC
 Type2=FLYING
-BattlerPlayerY=8
+BattlerPlayerY=12
 BattlerEnemyY=12
 BattlerAltitude=9
 #-------------------------------
@@ -303,8 +303,8 @@ BattlerAltitude=9
 FormName=Mow Rotom
 Type1=ELECTRIC
 Type2=GRASS
-BattlerPlayerY=6
-BattlerEnemyY=4
+BattlerPlayerY=26
+BattlerEnemyY=27
 BattlerAltitude=6
 #-------------------------------
 [GIRATINA-1]
@@ -330,126 +330,126 @@ Moves=1,GROWTH,10,MAGICALLEAF,19,LEECHSEED,28,QUICKATTACK,37,SWEETSCENT,46,NATUR
 Height=0.4
 Weight=5.2
 BattlerEnemyY=4
-BattlerPlayerY=0
+BattlerPlayerY=8
 BattlerAltitude=0
 #-------------------------------
 [ARCEUS-1]
 FormName=Fighting Type
 Type1=FIGHTING
 BattlerEnemyY=17
-BattlerPlayerY=0
+BattlerPlayerY=19
 BattlerAltitude=0
 #-------------------------------
 [ARCEUS-2]
 FormName=Flying Type
 Type1=FLYING
 BattlerEnemyY=17
-BattlerPlayerY=0
+BattlerPlayerY=15
 BattlerAltitude=0
 #-------------------------------
 [ARCEUS-3]
 FormName=Poison Type
 Type1=POISON
 BattlerEnemyY=17
-BattlerPlayerY=0
+BattlerPlayerY=21
 BattlerAltitude=0
 #-------------------------------
 [ARCEUS-4]
 FormName=Ground Type
 Type1=GROUND
 BattlerEnemyY=17
-BattlerPlayerY=0
+BattlerPlayerY=17
 BattlerAltitude=0
 #-------------------------------
 [ARCEUS-5]
 FormName=Rock Type
 Type1=ROCK
 BattlerEnemyY=17
-BattlerPlayerY=0
+BattlerPlayerY=22
 BattlerAltitude=0
 #-------------------------------
 [ARCEUS-6]
 FormName=Bug Type
 Type1=BUG
 BattlerEnemyY=17
-BattlerPlayerY=0
+BattlerPlayerY=19
 BattlerAltitude=0
 #-------------------------------
 [ARCEUS-7]
 FormName=Ghost Type
 Type1=GHOST
 BattlerEnemyY=17
-BattlerPlayerY=0
+BattlerPlayerY=18
 BattlerAltitude=0
 #-------------------------------
 [ARCEUS-8]
 FormName=Steel Type
 Type1=STEEL
 BattlerEnemyY=17
-BattlerPlayerY=0
+BattlerPlayerY=19
 BattlerAltitude=0
 #-------------------------------
 [ARCEUS-9]
 FormName=Unknown Type
 Type1=QMARKS
 BattlerEnemyY=17
-BattlerPlayerY=0
+BattlerPlayerY=23
 BattlerAltitude=0
 #-------------------------------
 [ARCEUS-10]
 FormName=Fire Type
 Type1=FIRE
 BattlerEnemyY=17
-BattlerPlayerY=0
+BattlerPlayerY=22
 BattlerAltitude=0
 #-------------------------------
 [ARCEUS-11]
 FormName=Water Type
 Type1=WATER
 BattlerEnemyY=17
-BattlerPlayerY=0
+BattlerPlayerY=18
 BattlerAltitude=0
 #-------------------------------
 [ARCEUS-12]
 FormName=Grass Type
 Type1=GRASS
 BattlerEnemyY=17
-BattlerPlayerY=0
+BattlerPlayerY=22
 BattlerAltitude=0
 #-------------------------------
 [ARCEUS-13]
 FormName=Electric Type
 Type1=ELECTRIC
 BattlerEnemyY=17
-BattlerPlayerY=0
+BattlerPlayerY=27
 BattlerAltitude=0
 #-------------------------------
 [ARCEUS-14]
 FormName=Psychic Type
 Type1=PSYCHIC
 BattlerEnemyY=17
-BattlerPlayerY=0
+BattlerPlayerY=24
 BattlerAltitude=0
 #-------------------------------
 [ARCEUS-15]
 FormName=Ice Type
 Type1=ICE
 BattlerEnemyY=17
-BattlerPlayerY=0
+BattlerPlayerY=21
 BattlerAltitude=0
 #-------------------------------
 [ARCEUS-16]
 FormName=Dragon Type
 Type1=DRAGON
 BattlerEnemyY=17
-BattlerPlayerY=0
+BattlerPlayerY=21
 BattlerAltitude=0
 #-------------------------------
 [ARCEUS-17]
 FormName=Dark Type
 Type1=DARK
 BattlerEnemyY=17
-BattlerPlayerY=0
+BattlerPlayerY=25
 BattlerAltitude=0
 #-------------------------------
 [BASCULIN-1]
@@ -458,7 +458,7 @@ Abilities=ROCKHEAD,ADAPTABILITY
 HiddenAbility=MOLDBREAKER
 WildItemUncommon=DEEPSEASCALE
 BattlerEnemyY=13
-BattlerPlayerY=0
+BattlerPlayerY=-4
 BattlerAltitude=10
 #-------------------------------
 [DARMANITAN-1]
@@ -467,44 +467,44 @@ Type1=FIRE
 Type2=PSYCHIC
 BaseStats=105,30,105,55,140,105
 EffortPoints=0,0,0,0,2,0
-BattlerPlayerY=3
-BattlerEnemyY=33
+BattlerPlayerY=9
+BattlerEnemyY=24
 BattlerAltitude=0
 #-------------------------------
 [DEERLING-1]
 FormName=Summer Form
 BattlerEnemyY=12
-BattlerPlayerY=0
+BattlerPlayerY=6
 BattlerAltitude=0
 #-------------------------------
 [DEERLING-2]
 FormName=Autumn Form
 BattlerEnemyY=12
-BattlerPlayerY=0
+BattlerPlayerY=6
 BattlerAltitude=0
 #-------------------------------
 [DEERLING-3]
 FormName=Winter Form
 BattlerEnemyY=12
-BattlerPlayerY=0
+BattlerPlayerY=5
 BattlerAltitude=0
 #-------------------------------
 [SAWSBUCK-1]
 FormName=Summer Form
 BattlerEnemyY=17
-BattlerPlayerY=0
+BattlerPlayerY=11
 BattlerAltitude=0
 #-------------------------------
 [SAWSBUCK-2]
 FormName=Autumn Form
 BattlerEnemyY=17
-BattlerPlayerY=0
+BattlerPlayerY=15
 BattlerAltitude=0
 #-------------------------------
 [SAWSBUCK-3]
 FormName=Winter Form
 BattlerEnemyY=17
-BattlerPlayerY=0
+BattlerPlayerY=12
 BattlerAltitude=0
 #-------------------------------
 [TORNADUS-1]
@@ -515,8 +515,8 @@ Abilities=REGENERATOR
 HiddenAbility=DEFIANT
 Height=1.4
 Shape=9
-BattlerPlayerY=19
-BattlerEnemyY=35
+BattlerPlayerY=50
+BattlerEnemyY=80
 BattlerAltitude=0
 #-------------------------------
 [THUNDURUS-1]
@@ -527,9 +527,9 @@ Abilities=VOLTABSORB
 HiddenAbility=DEFIANT
 Height=3.0
 Shape=6
-BattlerEnemyY=32
+BattlerEnemyY=43
 BattlerAltitude=7
-BattlerPlayerY=0
+BattlerPlayerY=69
 #-------------------------------
 [LANDORUS-1]
 FormName=Therian Forme
@@ -539,7 +539,7 @@ Abilities=INTIMIDATE
 HiddenAbility=SHEERFORCE
 Height=1.3
 Shape=8
-BattlerPlayerY=1
+BattlerPlayerY=17
 BattlerEnemyY=6
 BattlerAltitude=0
 #-------------------------------
@@ -550,8 +550,8 @@ EffortPoints=0,0,0,0,3,0
 Abilities=TURBOBLAZE
 Moves=1,ICYWIND,1,DRAGONRAGE,8,IMPRISON,15,ANCIENTPOWER,22,ICEBEAM,29,DRAGONBREATH,36,SLASH,43,FUSIONFLARE,50,ICEBURN,57,DRAGONPULSE,64,IMPRISON,71,ENDEAVOR,78,BLIZZARD,85,OUTRAGE,92,HYPERVOICE
 Height=3.6
-BattlerPlayerY=12
-BattlerEnemyY=9
+BattlerPlayerY=36
+BattlerEnemyY=27
 BattlerAltitude=0
 #-------------------------------
 [KYUREM-2]
@@ -561,8 +561,8 @@ EffortPoints=0,3,0,0,0,0
 Abilities=TERAVOLT
 Moves=1,ICYWIND,1,DRAGONRAGE,8,IMPRISON,15,ANCIENTPOWER,22,ICEBEAM,29,DRAGONBREATH,36,SLASH,43,FUSIONBOLT,50,FREEZESHOCK,57,DRAGONPULSE,64,IMPRISON,71,ENDEAVOR,78,BLIZZARD,85,OUTRAGE,92,HYPERVOICE
 Height=3.3
-BattlerPlayerY=2
-BattlerEnemyY=10
+BattlerPlayerY=15
+BattlerEnemyY=26
 BattlerAltitude=0
 #-------------------------------
 [KELDEO-1]
