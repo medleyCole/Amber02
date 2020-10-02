@@ -20467,8 +20467,8 @@ Color=Green
 Shape=12
 Kind=Wrestling
 Pokedex=Although its body is small, its proficient fighting skills enable it to keep up with big bruisers like Machamp and Hariyama.
-BattlerPlayerY=24
-BattlerEnemyY=13
+BattlerPlayerY=43
+BattlerEnemyY=41
 BattlerAltitude=0
 Evolutions=
 #-------------------------------
