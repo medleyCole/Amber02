@@ -449,6 +449,8 @@ ShowArea=true
 # Route04S
 BattleBack=fieldArid
 Bicycle=true
+MapPosition=2,12,2
+MapSize=1,11111
 Outdoor=false
 ShowArea=true
 #-------------------------------
@@ -503,5 +505,5 @@ ShowArea=false
 [129]
 # Gym
 BattleBack=Cave
-WildBattleBGM=00 - wildBattleGarden.ogg
 Outdoor=false
+WildBattleBGM=00 - wildBattleGarden.ogg
