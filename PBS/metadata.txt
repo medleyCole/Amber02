@@ -160,6 +160,8 @@ ShowArea=true
 BattleBack=fieldArid
 Bicycle=true
 Outdoor=true
+MapPosition=2,14,17
+MapSize=1,11
 ShowArea=true
 #-------------------------------
 [034]
@@ -214,6 +216,8 @@ ShowArea=true
 # Route 01 Overlook
 BattleBack=fieldArid
 Outdoor=true
+MapPosition=2,13,17
+MapSize=1,1
 ShowArea=false
 #-------------------------------
 [043]
@@ -391,12 +395,16 @@ Outdoor=true
 # Route 02
 BattleBack=fieldArid
 Outdoor=true
+MapPosition=2,14,15
+MapSize=1,11
 ShowArea=true
 #-------------------------------
 [078]
 # Deoro Pokemon Lab
 BattleBack=fieldArid
 Outdoor=true
+MapPosition=2,14,13
+MapSize=1,11
 ShowArea=true
 #-------------------------------
 [079]
@@ -408,10 +416,14 @@ ShowArea=true
 [083]
 # Route 01E
 Outdoor=true
+MapPosition=2,15,18
+MapSize=2,0111
 ShowArea=true
 #-------------------------------
 [084]
 # Live Oak Forest Entrance
+MapPosition=2,16,18
+MapSize=1,1
 Outdoor=true
 #-------------------------------
 [085]
@@ -425,6 +437,8 @@ ShowArea=true
 BattleBack=mountain
 TrainerBattleBGM=00-TrainerBattle.wav
 Outdoor=true
+MapPosition=2,13,19
+MapSize=1,1
 WildBattleBGM=00-WildBattle.ogg
 ShowArea=true
 #-------------------------------
@@ -432,6 +446,8 @@ ShowArea=true
 # Live Oak forest
 BattleBack=forest
 Outdoor=false
+MapPosition=2,16,17
+MapSize=2,1100
 ShowArea=true
 #-------------------------------
 [102]
@@ -449,9 +465,9 @@ ShowArea=true
 # Route04S
 BattleBack=fieldArid
 Bicycle=true
-MapPosition=2,15,26
-MapSize=2,1111
 Outdoor=false
+MapPosition=2,18,18
+MapSize=2,1111
 ShowArea=true
 #-------------------------------
 [105]
@@ -460,18 +476,23 @@ MapSize=0,
 BattleBack=fieldArid
 Bicycle=true
 Outdoor=true
+MapPosition=2,18,16
+MapSize=1,111
 ShowArea=true
 #-------------------------------
 [106]
 # Pepper Tree Town
 Bicycle=true
 Outdoor=true
+MapPosition=2,17,13
+MapSize=3,100111
 ShowArea=true
 #-------------------------------
 [107]
 # The Smack-Down Dome
 BattleBack=SmackDown
 Outdoor=true
+
 ShowArea=true
 #-------------------------------
 [110]
@@ -483,21 +504,18 @@ ShowArea=true
 #-------------------------------
 [114]
 # Route04s Cave1
-MapSize=0,
 BattleBack=cave
 WildBattleBGM=00 - wildBattleGarden.ogg
 ShowArea=false
 #-------------------------------
 [118]
 # Route04s Cave2
-MapSize=0,
 BattleBack=cave
 WildBattleBGM=00 - wildBattleGarden.ogg
 ShowArea=false
 #-------------------------------
 [127]
 # Route04n Cave
-MapSize=0,
 BattleBack=cave
 WildBattleBGM=00 - wildBattleGarden.ogg
 ShowArea=false

@@ -95,22 +95,6 @@ WEEDLE,4,6
 WEEDLE,4,6
 CATERPIE,4,6
 #-------------------------------
-084 # Live Oak Forest Entrance
-25,10,10
-Land
-SHROOMISH,5
-SHROOMISH,5
-SHROOMISH,5
-SHROOMISH,5
-SHROOMISH,5
-SHROOMISH,5
-SHROOMISH,5
-SHROOMISH,5
-SHROOMISH,5
-SHROOMISH,5
-SHROOMISH,5
-SHROOMISH,5
-#-------------------------------
 085 # Beedrill Nest
 20,10,10
 Land
