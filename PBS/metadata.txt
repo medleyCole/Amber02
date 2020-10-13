@@ -449,8 +449,8 @@ ShowArea=true
 # Route04S
 BattleBack=fieldArid
 Bicycle=true
-MapPosition=2,12,2
-MapSize=1,11111
+MapPosition=2,15,26
+MapSize=2,1111
 Outdoor=false
 ShowArea=true
 #-------------------------------
