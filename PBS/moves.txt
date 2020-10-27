@@ -437,7 +437,7 @@
 437,ACID,Acid,046,40,POISON,Special,100,30,10,04,0,bef,"The foe is attacked with a spray of harsh acid. It may also lower the target's Sp. Def stat."
 438,ACIDSPRAY,Acid Spray,04F,40,POISON,Special,100,20,100,00,0,befn,"The user spits fluid that works to melt the target. This harshly reduces the target's Sp. Def stat."
 439,SMOG,Smog,005,30,POISON,Special,70,20,40,00,0,bef,"The target is attacked with a discharge of filthy gases. It may also poison the target."
-440,POISONSTING,Poison Sting,005,15,POISON,Physical,100,35,30,00,0,bef,"The user stabs the target with a poisonous stinger. This may also poison the target."
+440,POISONSTING,Poison Sting,005,15,POISON,Physical,100,35,50,00,0,bef,"The user stabs the target with a poisonous stinger. This may also poison the target."
 441,ACIDARMOR,Acid Armor,02F,0,POISON,Status,0,20,0,10,0,d,"The user alters its cellular structure to liquefy itself, sharply raising its Defense stat."
 442,COIL,Coil,025,0,POISON,Status,0,20,0,10,0,d,"The user coils up and concentrates. This raises its Attack and Defense stats as well as its accuracy."
 443,GASTROACID,Gastro Acid,068,0,POISON,Status,100,10,0,00,0,bce,"The user hurls up its stomach acids on the foe. The fluid negates the effect of the target's Ability."
