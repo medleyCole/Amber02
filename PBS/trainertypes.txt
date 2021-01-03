@@ -58,7 +58,7 @@
 55,YOUNGCOUPLE,Young Couple,60,,,,Mixed,32,
 56,TEAMROCKET_M,Team Rocket,32,,,,Male,,
 57,TEAMROCKET_F,Team Rocket,32,,,,Female,,
-58,ROCKETBOSS,Rocket Boss,100,,,,Male,,
+58,ROCKETBOSS,Rocket Boss,100,,,,,,
 59,LEADER_Brock,Gym Leader,100,Battle Gym Leader,,,Male,,
 60,LEADER_Misty,Gym Leader,100,Battle Gym Leader,,,Female,,
 61,LEADER_Surge,Gym Leader,100,Battle Gym Leader,,,Male,,
@@ -109,3 +109,4 @@
 106,PETREL1Full,Team Rocket LT,80,01 - MarsBattle1,,,Male,200,
 107,LOCALLEGEND2_1,Local Legend,0,00 - legendTheme,,,Mixed,100,
 108,LOCALLEGEND2_0,Local Legend,70,00 - legendTheme,,,Mixed,100,
+109,BOSS_0,Boss,0,,,,Mixed,100

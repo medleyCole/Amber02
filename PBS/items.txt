@@ -599,3 +599,9 @@
 598,EXPALLOFF,TeamEXP: Off,TeamEXPS: Off,8,0,"Turning on this special device will allow all the Pokémon on your team to receive Exp. Points from battles.",2,0,6
 599,TM101,TM101,TM101s,4,3000,"The target is infested and attacked for four to five turns. The target can't flee during this time.",3,0,0,INFESTATION
 600,TM102,TM102,TM102s,4,3000,"The user lets loose a horribly loud shout with the power to damage.",3,0,0,HYPERVOICE
+601,GRASSYSEED,Grassy Seed,Grassy Seeds,1,4000,"An item to be held by a Pokémon. It boosts Defense on Grassy Terrain. Can only be used once.",0,0,0,
+602,MELTANCANDY,Meltan Candy,Meltan Candies,1,0,"A candy that is packed with energy. It is rumored to induce evolution in Meltan.",1,0,7,
+1298,SWEETAPPLE,Sweet Apple,Sweet Apples,1,2200,"A peculiar apple that can make a certain species of Pokémon evolve. It's exceptionally sweet.",1,0,7,
+1299,TARTAPPLE,Tart Apple,Tart Apples,1,2200,"A peculiar apple that can make a certain species of Pokémon evolve. It's exceptionally tart.",1,0,7,
+1300,CRACKEDPOT,Cracked Pot,Cracked Pots,1,1600,"A peculiar teapot that can make a certain species of Pokémon evolve. It's cracked, but tea poured from it is delicious.",1,0,7,
+1301,CHIPPEDPOT,Chipped Pot,Chipped Pots,1,1600,"A peculiar teapot that can make a certain species of Pokémon evolve. It's chipped, but tea poured from it is delicious.",1,0,7,
