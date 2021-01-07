@@ -157,11 +157,11 @@ ShowArea=true
 #-------------------------------
 [033]
 # Route 01
+MapSize=1,11
 BattleBack=fieldArid
 Bicycle=true
-Outdoor=true
 MapPosition=2,14,17
-MapSize=1,11
+Outdoor=true
 ShowArea=true
 #-------------------------------
 [034]
@@ -214,10 +214,10 @@ ShowArea=true
 #-------------------------------
 [042]
 # Route 01 Overlook
-BattleBack=fieldArid
-Outdoor=true
-MapPosition=2,13,17
 MapSize=1,1
+BattleBack=fieldArid
+MapPosition=2,13,17
+Outdoor=true
 ShowArea=false
 #-------------------------------
 [043]
@@ -393,18 +393,18 @@ Outdoor=true
 #-------------------------------
 [077]
 # Route 02
-BattleBack=fieldArid
-Outdoor=true
-MapPosition=2,14,15
 MapSize=1,11
+BattleBack=fieldArid
+MapPosition=2,14,15
+Outdoor=true
 ShowArea=true
 #-------------------------------
 [078]
 # Deoro Pokemon Lab
-BattleBack=fieldArid
-Outdoor=true
-MapPosition=2,14,13
 MapSize=1,11
+BattleBack=fieldArid
+MapPosition=2,14,13
+Outdoor=true
 ShowArea=true
 #-------------------------------
 [079]
@@ -415,15 +415,15 @@ ShowArea=true
 #-------------------------------
 [083]
 # Route 01E
-Outdoor=true
-MapPosition=2,15,18
 MapSize=2,0111
+MapPosition=2,15,18
+Outdoor=true
 ShowArea=true
 #-------------------------------
 [084]
 # Live Oak Forest Entrance
-MapPosition=2,16,18
 MapSize=1,1
+MapPosition=2,16,18
 Outdoor=true
 #-------------------------------
 [085]
@@ -434,20 +434,20 @@ ShowArea=true
 #-------------------------------
 [088]
 # Live Oak Beach
+MapSize=1,1
 BattleBack=mountain
 TrainerBattleBGM=00-TrainerBattle.wav
-Outdoor=true
 MapPosition=2,13,19
-MapSize=1,1
+Outdoor=true
 WildBattleBGM=00-WildBattle.ogg
 ShowArea=true
 #-------------------------------
 [101]
 # Live Oak forest
-BattleBack=forest
-Outdoor=false
-MapPosition=2,16,17
 MapSize=2,1100
+BattleBack=forest
+MapPosition=2,16,17
+Outdoor=false
 ShowArea=true
 #-------------------------------
 [102]
@@ -463,36 +463,34 @@ ShowArea=true
 #-------------------------------
 [104]
 # Route04S
+MapSize=2,1111
 BattleBack=fieldArid
 Bicycle=true
-Outdoor=false
 MapPosition=2,18,18
-MapSize=2,1111
+Outdoor=false
 ShowArea=true
 #-------------------------------
 [105]
 # Route04N 
-MapSize=0,
+MapSize=1,111
 BattleBack=fieldArid
 Bicycle=true
-Outdoor=true
 MapPosition=2,18,16
-MapSize=1,111
+Outdoor=true
 ShowArea=true
 #-------------------------------
 [106]
 # Pepper Tree Town
-Bicycle=true
-Outdoor=true
-MapPosition=2,17,13
 MapSize=3,100111
+Bicycle=true
+MapPosition=2,17,13
+Outdoor=true
 ShowArea=true
 #-------------------------------
 [107]
 # The Smack-Down Dome
 BattleBack=SmackDown
 Outdoor=true
-
 ShowArea=true
 #-------------------------------
 [110]
@@ -521,7 +519,12 @@ WildBattleBGM=00 - wildBattleGarden.ogg
 ShowArea=false
 #-------------------------------
 [129]
-# Gym
+# Pepper Tree Gym
 BattleBack=Cave
 Outdoor=false
 WildBattleBGM=00 - wildBattleGarden.ogg
+#-------------------------------
+[140]
+# Prelude
+Weather=HeavyRain,100
+Outdoor=true
