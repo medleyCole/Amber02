@@ -526,5 +526,6 @@ WildBattleBGM=00 - wildBattleGarden.ogg
 #-------------------------------
 [140]
 # Prelude
+BattleBack=prologue
 Weather=HeavyRain,100
 Outdoor=true
